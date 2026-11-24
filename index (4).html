@@ -1,0 +1,2931 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家庭教育實踐兒童財商｜Penny Coach</title>
+<meta name="description" content="品沐文教學員專屬。把兒童財商帶進家庭教育日常，每天 10 分鐘就能開始。">
+
+<!-- 網頁分頁 Logo（P 字彩虹漸層，SVG 內嵌，不用額外檔案）-->
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g1" cx="30%25" cy="30%25" r="70%25"><stop offset="0%25" stop-color="%23F5C8D8"/><stop offset="100%25" stop-color="%23FDE9F0" stop-opacity="0"/></radialGradient><radialGradient id="g2" cx="75%25" cy="25%25" r="70%25"><stop offset="0%25" stop-color="%23D8E0F2"/><stop offset="100%25" stop-color="%23FDE9F0" stop-opacity="0"/></radialGradient><radialGradient id="g3" cx="70%25" cy="75%25" r="70%25"><stop offset="0%25" stop-color="%23FCE5C8"/><stop offset="100%25" stop-color="%23FDE9F0" stop-opacity="0"/></radialGradient><radialGradient id="g4" cx="25%25" cy="80%25" r="70%25"><stop offset="0%25" stop-color="%23C8E0D8"/><stop offset="100%25" stop-color="%23FDE9F0" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="48" fill="%23FDE9F0"/><circle cx="50" cy="50" r="48" fill="url(%23g1)"/><circle cx="50" cy="50" r="48" fill="url(%23g2)"/><circle cx="50" cy="50" r="48" fill="url(%23g3)"/><circle cx="50" cy="50" r="48" fill="url(%23g4)"/><text x="50" y="74" font-family="Georgia, serif" font-size="68" font-weight="700" text-anchor="middle" fill="%232C2C2C">P</text></svg>'>
+<meta name="theme-color" content="#FAF7F2">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg-cream: #FAF7F2;
+  --bg-milk: #F0E8DC;
+  --accent-amber: #B8864E;
+  --accent-amber-dark: #9A6E3A;
+  --accent-ginger: #E8A83E;
+  --accent-sage: #A8B5A0;
+  --text-dark: #2C2C2C;
+  --text-soft: #6B6256;
+  --line-soft: rgba(184, 134, 78, 0.18);
+  --shadow-soft: 0 8px 32px rgba(184, 134, 78, 0.08);
+  --shadow-card: 0 12px 40px rgba(76, 60, 40, 0.06);
+  --font-display: 'Playfair Display', 'Noto Serif TC', serif;
+  --font-serif: 'Noto Serif TC', serif;
+  --font-sans: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background: var(--bg-cream);
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ========== 密碼閘門 ========== */
+.gate {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse at top right, rgba(232, 168, 62, 0.15), transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(168, 181, 160, 0.12), transparent 50%),
+    var(--bg-cream);
+}
+.gate-card {
+  max-width: 440px;
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 44px 36px;
+  box-shadow: 0 30px 80px rgba(76, 60, 40, 0.12);
+  text-align: center;
+  border: 1px solid var(--line-soft);
+}
+.gate-logo {
+  width: 100px;
+  height: 120px;
+  margin: 0 auto 22px;
+  border-radius: 50% / 45%;
+  background:
+    radial-gradient(circle at 25% 30%, #F5C8D8 0%, transparent 40%),
+    radial-gradient(circle at 75% 25%, #D8E0F2 0%, transparent 40%),
+    radial-gradient(circle at 70% 75%, #FCE5C8 0%, transparent 40%),
+    radial-gradient(circle at 25% 80%, #C8E0D8 0%, transparent 40%),
+    linear-gradient(135deg, #FDE9F0 0%, #E5E0F0 50%, #FCE5C8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--text-dark);
+  box-shadow: 0 10px 30px rgba(184, 134, 78, 0.12);
+}
+.gate-eyebrow {
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  color: var(--accent-amber);
+  margin-bottom: 10px;
+}
+.gate-title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.gate-sub {
+  font-size: 14px;
+  color: var(--text-soft);
+  margin-bottom: 28px;
+  line-height: 1.9;
+}
+.gate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.gate-form input {
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line-soft);
+  font-family: inherit;
+  font-size: 15px;
+  text-align: center;
+  background: var(--bg-cream);
+  outline: none;
+  letter-spacing: 0.1em;
+  transition: border-color 0.3s;
+}
+.gate-form input:focus {
+  border-color: var(--accent-amber);
+}
+.gate-form button {
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent-amber);
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 6px 18px rgba(184, 134, 78, 0.25);
+}
+.gate-form button:hover {
+  background: var(--accent-amber-dark);
+  transform: translateY(-2px);
+}
+.gate-error {
+  font-size: 13px;
+  color: #C86B5C;
+  min-height: 20px;
+  margin-bottom: 14px;
+}
+.gate-footer {
+  font-size: 13px;
+  color: var(--text-soft);
+  padding-top: 20px;
+  border-top: 1px dashed var(--line-soft);
+}
+.gate-footer a {
+  color: var(--accent-amber);
+  font-weight: 500;
+  text-decoration: underline;
+}
+.gate-hint {
+  background: rgba(232, 168, 62, 0.08);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--text-soft);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* ========== 主 App ========== */
+.app {
+  display: none;
+  min-height: 100vh;
+}
+.app.active { display: block; }
+
+/* 頂部 */
+.app-header {
+  background: #fff;
+  border-bottom: 1px solid var(--line-soft);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+.app-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.app-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  color: var(--text-dark);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.app-logo-circle {
+  width: 32px;
+  height: 36px;
+  border-radius: 50% / 45%;
+  background:
+    radial-gradient(circle at 30% 30%, #F5C8D8, transparent 50%),
+    radial-gradient(circle at 70% 30%, #D8E0F2, transparent 50%),
+    radial-gradient(circle at 60% 70%, #FCE5C8, transparent 50%),
+    linear-gradient(135deg, #FDE9F0, #FCE5C8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+.app-logo-text {
+  font-size: 16px;
+}
+.app-logo-text span {
+  color: var(--accent-amber);
+}
+.app-logout {
+  font-size: 13px;
+  color: var(--text-soft);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line-soft);
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.app-logout:hover {
+  background: var(--bg-milk);
+}
+
+/* Hero */
+.app-hero {
+  padding: 50px 20px 30px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at top, rgba(232, 168, 62, 0.08), transparent 60%);
+}
+.app-hero-eyebrow {
+  font-family: var(--font-display);
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  color: var(--accent-amber);
+  margin-bottom: 12px;
+}
+.app-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+.app-hero p {
+  font-size: 15px;
+  color: var(--text-soft);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* 工具分頁 */
+.tabs {
+  max-width: 1100px;
+  margin: 30px auto 0;
+  padding: 0 20px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.tabs::-webkit-scrollbar { display: none; }
+.tab-btn {
+  flex-shrink: 0;
+  padding: 11px 18px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--line-soft);
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-soft);
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.tab-btn:hover { border-color: var(--accent-amber); color: var(--accent-amber); }
+.tab-btn.active {
+  background: var(--accent-amber);
+  color: #fff;
+  border-color: var(--accent-amber);
+}
+
+/* Panel 區塊 */
+.panel-wrap {
+  max-width: 1100px;
+  margin: 24px auto 60px;
+  padding: 0 20px;
+}
+.panel {
+  display: none;
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px;
+  border: 1px solid var(--line-soft);
+  box-shadow: var(--shadow-card);
+}
+.panel.active { display: block; }
+.panel-eyebrow {
+  font-family: var(--font-display);
+  letter-spacing: 0.3em;
+  font-size: 11px;
+  color: var(--accent-amber);
+  margin-bottom: 8px;
+}
+.panel-title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.panel-hint {
+  font-size: 14px;
+  color: var(--text-soft);
+  margin-bottom: 26px;
+  line-height: 1.85;
+  padding: 14px 18px;
+  background: var(--bg-cream);
+  border-radius: 12px;
+  border-left: 3px solid var(--accent-sage);
+}
+
+/* 表單 */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-field label {
+  font-size: 14px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1.5px solid var(--line-soft);
+  background: var(--bg-cream);
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color 0.3s;
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--accent-amber);
+}
+.form-field textarea { resize: vertical; min-height: 80px; line-height: 1.7; }
+.btn-primary {
+  background: var(--accent-amber);
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.3s;
+  box-shadow: 0 6px 18px rgba(184, 134, 78, 0.22);
+}
+.btn-primary:hover {
+  background: var(--accent-amber-dark);
+  transform: translateY(-2px);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--accent-amber);
+  border: 1.5px solid var(--accent-amber);
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-secondary:hover { background: var(--accent-amber); color: #fff; }
+
+/* 結果區 */
+.result {
+  margin-top: 24px;
+  padding: 24px 26px;
+  background: linear-gradient(135deg, rgba(232, 168, 62, 0.08), rgba(184, 134, 78, 0.05));
+  border-left: 4px solid var(--accent-ginger);
+  border-radius: 14px;
+  white-space: pre-line;
+  line-height: 1.95;
+  color: var(--text-dark);
+  font-size: 15px;
+}
+.result.sage {
+  background: linear-gradient(135deg, rgba(168, 181, 160, 0.1), rgba(168, 181, 160, 0.04));
+  border-left-color: var(--accent-sage);
+}
+.result strong {
+  color: var(--accent-amber-dark);
+  font-weight: 600;
+}
+.result-section {
+  margin-bottom: 18px;
+}
+.result-section:last-child { margin-bottom: 0; }
+.result-label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--accent-amber);
+  padding: 3px 10px;
+  background: rgba(184, 134, 78, 0.1);
+  border-radius: 999px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* 任務表 */
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: var(--bg-cream);
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.task-item:hover { background: var(--bg-milk); }
+.task-item input[type="checkbox"] {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-amber);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.task-item label {
+  font-size: 15px;
+  cursor: pointer;
+  line-height: 1.7;
+  flex: 1;
+}
+.task-item.done label {
+  color: var(--text-soft);
+  text-decoration: line-through;
+}
+.task-progress {
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: rgba(232, 168, 62, 0.1);
+  border-radius: 12px;
+  font-size: 14px;
+  color: var(--accent-amber-dark);
+  font-weight: 500;
+}
+
+/* ========== 對話資料庫 ========== */
+.filter-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+  padding: 18px;
+  background: var(--bg-cream);
+  border-radius: 14px;
+}
+.filter-group { display: flex; flex-direction: column; gap: 6px; }
+.filter-group label {
+  font-size: 12px;
+  color: var(--text-soft);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.filter-group select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--line-soft);
+  background: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-dark);
+  outline: none;
+}
+.filter-group select:focus { border-color: var(--accent-amber); }
+.filter-toggle { display: flex; align-items: center; }
+.fav-toggle {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--line-soft);
+  background: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-soft);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.fav-toggle.active {
+  background: var(--accent-amber);
+  color: #fff;
+  border-color: var(--accent-amber);
+}
+@media (max-width: 720px) {
+  .filter-bar { grid-template-columns: 1fr 1fr; gap: 10px; padding: 14px; }
+}
+@media (max-width: 480px) {
+  .filter-bar { grid-template-columns: 1fr; }
+}
+
+.talk-count {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 14px;
+  padding-left: 4px;
+}
+
+.talk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.talk-card {
+  background: #fff;
+  border: 1.5px solid var(--line-soft);
+  border-radius: 14px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.talk-card:hover {
+  border-color: var(--accent-amber);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(76, 60, 40, 0.08);
+}
+.talk-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.talk-badge {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+.badge-verified { background: rgba(168, 181, 160, 0.2); color: #5A6B52; }
+.badge-qa { background: rgba(232, 168, 62, 0.18); color: var(--accent-amber-dark); }
+.badge-scenario { background: rgba(184, 134, 78, 0.12); color: var(--accent-amber); }
+.badge-age { background: rgba(76, 60, 40, 0.08); color: var(--text-soft); }
+.badge-category { background: rgba(200, 107, 92, 0.12); color: #B5614F; }
+.badge-review-pending {
+  background: rgba(200, 107, 92, 0.1);
+  color: #B5614F;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.talk-card-id {
+  font-family: var(--font-display);
+  font-size: 11px;
+  color: var(--accent-amber);
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+.talk-card-title {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+.talk-card-problem {
+  font-size: 13px;
+  color: var(--text-soft);
+  line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.talk-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line-soft);
+  font-size: 13px;
+  color: var(--accent-amber);
+}
+.talk-fav-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--line-soft);
+  transition: color 0.2s;
+  padding: 4px 8px;
+  line-height: 1;
+}
+.talk-fav-btn:hover { color: #C86B5C; }
+.talk-fav-btn.faved { color: #C86B5C; }
+
+/* Modal */
+.talk-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(44, 44, 44, 0.75);
+  backdrop-filter: blur(6px);
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+.talk-modal.active { display: flex; }
+.talk-modal-content {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 680px;
+  width: 100%;
+  padding: 36px;
+  position: relative;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+.talk-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: var(--bg-cream);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--text-soft);
+  transition: all 0.3s;
+}
+.talk-modal-close:hover { background: var(--accent-amber); color: #fff; }
+
+.talk-detail-section {
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed var(--line-soft);
+}
+.talk-detail-section:last-child { border-bottom: none; }
+.talk-detail-label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--accent-amber);
+  padding: 3px 10px;
+  background: rgba(184, 134, 78, 0.1);
+  border-radius: 999px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.talk-detail-section p {
+  font-size: 15px;
+  color: var(--text-dark);
+  line-height: 1.95;
+  margin-bottom: 8px;
+}
+.talk-dialogue {
+  background: var(--bg-cream);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-top: 10px;
+  white-space: pre-line;
+  font-size: 14.5px;
+  line-height: 2.1;
+  color: var(--text-dark);
+}
+.talk-dialogue-speaker {
+  font-weight: 700;
+  color: var(--accent-amber-dark);
+}
+.talk-modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.talk-positive-action {
+  background: linear-gradient(135deg, rgba(232, 168, 62, 0.08), rgba(245, 232, 213, 0.5));
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 6px 0 20px;
+  border-left: 4px solid var(--accent-ginger);
+}
+.talk-detail-label-positive {
+  background: linear-gradient(135deg, var(--accent-ginger), var(--accent-amber)) !important;
+  color: #fff !important;
+}
+.talk-positive-action p {
+  margin-bottom: 0 !important;
+}
+.talk-disclaimer {
+  margin-top: 18px;
+  padding: 12px 16px;
+  background: rgba(200, 107, 92, 0.06);
+  border-left: 3px solid #D8947F;
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+.talk-empty {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-soft);
+  font-size: 14px;
+}
+
+/* 零用金 · 國內外研究建議 */
+.allow-research {
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px dashed var(--line-soft);
+}
+.allow-research-title {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+.allow-research-intro {
+  font-size: 14px;
+  color: var(--text-soft);
+  margin-bottom: 22px;
+  line-height: 1.85;
+}
+.allow-research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.allow-research-card {
+  background: var(--bg-cream);
+  border-radius: 14px;
+  padding: 20px 22px;
+  border: 1px solid var(--line-soft);
+}
+.allow-research-card p {
+  font-size: 13.5px;
+  color: var(--text-soft);
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+.allow-research-card p:last-child { margin-bottom: 0; }
+.allow-research-card strong { color: var(--text-dark); font-weight: 600; }
+.allow-research-flag {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-amber);
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--line-soft);
+}
+.allow-research-note {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, rgba(232, 168, 62, 0.1), rgba(184, 134, 78, 0.05));
+  border-left: 3px solid var(--accent-ginger);
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--text-dark);
+  line-height: 1.85;
+}
+@media (max-width: 720px) {
+  .allow-research-grid { grid-template-columns: 1fr; }
+}
+
+/* 健檢測驗 */
+.quiz-question {
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: var(--bg-cream);
+}
+.quiz-question-num {
+  font-family: var(--font-display);
+  color: var(--accent-amber);
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+}
+.quiz-question-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1.5px solid var(--line-soft);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+.quiz-option:hover { border-color: var(--accent-amber); }
+.quiz-option input { accent-color: var(--accent-amber); flex-shrink: 0; }
+.quiz-option.selected {
+  background: rgba(232, 168, 62, 0.08);
+  border-color: var(--accent-amber);
+}
+
+/* Prompt 卡片 */
+.prompt-card {
+  background: var(--bg-cream);
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 14px;
+  border: 1px solid var(--line-soft);
+}
+.prompt-card-title {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+.prompt-card-use {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 14px;
+}
+.prompt-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 18px;
+  border: 1px dashed var(--line-soft);
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--text-dark);
+  font-family: 'SF Mono', Consolas, var(--font-sans);
+  margin-bottom: 10px;
+  position: relative;
+  white-space: pre-line;
+}
+.prompt-copy-btn {
+  background: var(--text-dark);
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.prompt-copy-btn:hover { background: var(--accent-amber); }
+.prompt-copy-btn.copied { background: var(--accent-sage); }
+
+/* CTA 升級區 */
+.upgrade-cta {
+  max-width: 1100px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+}
+.upgrade-card {
+  background: linear-gradient(135deg, var(--accent-amber), var(--accent-amber-dark));
+  color: #fff;
+  border-radius: 24px;
+  padding: 40px 36px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(184, 134, 78, 0.2);
+}
+.upgrade-eyebrow {
+  font-family: var(--font-display);
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+.upgrade-card h3 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.upgrade-card p {
+  font-size: 15px;
+  opacity: 0.92;
+  margin-bottom: 24px;
+  line-height: 1.85;
+}
+.upgrade-card a {
+  display: inline-block;
+  background: #fff;
+  color: var(--accent-amber-dark);
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+.upgrade-card a:hover { transform: translateY(-2px); }
+
+/* Footer */
+.app-footer {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 13px;
+  background: var(--bg-milk);
+  margin-top: 50px;
+}
+.app-footer a { color: var(--accent-amber); font-weight: 500; }
+
+/* 手機版 */
+@media (max-width: 720px) {
+  .panel { padding: 24px 20px; }
+  .form-grid { grid-template-columns: 1fr; gap: 14px; }
+  .app-hero { padding: 36px 20px 20px; }
+  .upgrade-card { padding: 30px 22px; }
+  .gate-card { padding: 36px 24px; }
+  .gate-logo { width: 84px; height: 100px; font-size: 44px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===================== 密碼閘門 ===================== -->
+<div class="gate" id="gate">
+  <div class="gate-card">
+    <div class="gate-logo">P</div>
+    <div class="gate-eyebrow">PINMU · FAMILY MONEY LAB</div>
+    <h1 class="gate-title">家庭教育<br>實踐兒童財商</h1>
+    <p class="gate-sub">
+      品沐文教學員專屬。<br>
+      請輸入課程章節中的學員密碼。
+    </p>
+
+    <div class="gate-hint">
+      💡 密碼寫在你的課程「Bonus｜品沐家庭財商實踐工具箱」章節。
+    </div>
+
+    <form class="gate-form" onsubmit="checkPassword(event)">
+      <input
+        type="password"
+        id="pwInput"
+        placeholder="輸入學員密碼"
+        autocomplete="off"
+        required>
+      <button type="submit">進入工具箱 →</button>
+    </form>
+    <div class="gate-error" id="gateError"></div>
+
+    <div class="gate-footer">
+      尚未是學員？<br>
+      <a href="https://pennywithu.github.io/" target="_blank">回主站了解完整陪跑方案 →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 主 App ===================== -->
+<div class="app" id="app">
+
+  <!-- 頂部 -->
+  <header class="app-header">
+    <div class="app-header-inner">
+      <a href="#" class="app-logo">
+        <div class="app-logo-circle">P</div>
+        <div class="app-logo-text">Family Money <span>Lab</span></div>
+      </a>
+      <button class="app-logout" onclick="logout()">登出</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="app-hero">
+    <div class="app-hero-eyebrow">PENNY COACH · 學員專屬</div>
+    <h1>家庭教育實踐兒童財商</h1>
+    <p>把兒童財商帶進家庭日常，每天 10 分鐘就能開始。<br>六個工具，都能在家裡立刻動手。</p>
+  </section>
+
+  <!-- 分頁 -->
+  <nav class="tabs" id="tabs">
+    <button class="tab-btn active" data-tab="checkup">🔍 家庭財商健檢</button>
+    <button class="tab-btn" data-tab="allowance">💰 零用金規劃</button>
+    <button class="tab-btn" data-tab="saving">🐷 儲蓄目標</button>
+    <button class="tab-btn" data-tab="talk">💬 情境對話卡</button>
+    <button class="tab-btn" data-tab="tasks">📅 12 週任務追蹤</button>
+    <button class="tab-btn" data-tab="prompts">✨ AI 共學提示詞</button>
+  </nav>
+
+  <div class="panel-wrap">
+
+    <!-- 1. 家庭財商健檢（新順位）-->
+    <section class="panel active" id="checkup">
+      <div class="panel-eyebrow">TOOL 01</div>
+      <h2 class="panel-title">家庭財商健檢（10 題）</h2>
+      <p class="panel-hint">
+        建議從這裡開始。花 3 分鐘回答，先了解你家目前的財商狀態屬於哪一型，<br>
+        再根據類型對應的下一步建議，決定要用哪個工具、從哪一週課程開始切入。<br>
+        沒有分數高低，只有「下一步該做什麼」的建議。
+      </p>
+
+      <div id="quizQuestions"></div>
+
+      <button class="btn-primary" onclick="calcQuiz()" style="margin-top:16px">看我的家庭類型分析 →</button>
+      <div class="result" id="quizResult" style="display:none"></div>
+    </section>
+
+    <!-- 2. 零用金規劃器 -->
+    <section class="panel" id="allowance">
+      <div class="panel-eyebrow">TOOL 02</div>
+      <h2 class="panel-title">零用金制度規劃器</h2>
+      <p class="panel-hint">
+        這不是「幾歲應該給多少錢」的標準答案，而是<strong>和孩子一起討論用錢規則的起點</strong>。<br>
+        建議和孩子一起打開這個工具，邊填邊聊。
+      </p>
+
+      <div class="form-grid">
+        <div class="form-field">
+          <label>孩子年齡</label>
+          <select id="ageSelect">
+            <option value="3-5">3 - 5 歲（學齡前）</option>
+            <option value="6-8" selected>6 - 8 歲（低年級）</option>
+            <option value="9-12">9 - 12 歲（中高年級）</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>發放頻率</label>
+          <select id="freqSelect">
+            <option value="週">每週</option>
+            <option value="月">每月</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>每次金額（元）</label>
+          <input type="number" id="amountInput" min="0" value="100">
+        </div>
+        <div class="form-field">
+          <label>存存比例（%）</label>
+          <input type="number" id="percentInput" min="0" max="100" value="30">
+        </div>
+      </div>
+
+      <button class="btn-primary" onclick="calcAllowance()">產生家庭方案 →</button>
+
+      <div class="result" id="allowResult" style="display:none"></div>
+
+      <!-- 國內外研究建議 -->
+      <div class="allow-research">
+        <h3 class="allow-research-title">📊 國內外零用錢建議參考</h3>
+        <p class="allow-research-intro">
+          各國專家對「幾歲開始、給多少」沒有單一答案，以下整理供你參考。<br>
+          最重要的不是金額，是<strong>規律性</strong>和<strong>隨之而來的對話</strong>。
+        </p>
+        <div class="allow-research-grid">
+          <div class="allow-research-card">
+            <div class="allow-research-flag">🇺🇸 美國</div>
+            <p><strong>開始年齡：</strong>5-6 歲（幼稚園至小一）</p>
+            <p><strong>金額公式：</strong>最常見「<strong>每歲 1 美元／週</strong>」（US Bank、Kiplinger）<br>
+            折算約為 <strong>每歲 NT$30／週</strong>（6 歲 NT$180、8 歲 NT$240、10 歲 NT$300）</p>
+            <p><strong>家事是否綁定？</strong>專家兩派：一派認為應連結工作與報酬；主流意見（Ron Lieber、NYT）則主張<strong>家事是家庭成員的責任，不該用錢交換</strong>。</p>
+          </div>
+          <div class="allow-research-card">
+            <div class="allow-research-flag">🇭🇰 香港</div>
+            <p><strong>開始年齡：</strong>6 歲（小一入學）</p>
+            <p><strong>參考數據：</strong>投委會調查，中學生每月平均約 HK$1,134</p>
+            <p><strong>特色做法：</strong>Bowtie 等機構建議搭配「兒童八達通」或電子錢包，從小建立<strong>數位支付的金錢感</strong>。</p>
+          </div>
+          <div class="allow-research-card">
+            <div class="allow-research-flag">🇹🇼 台灣</div>
+            <p><strong>開始年齡：</strong>親子財商專家（商腦金姐姐等）建議<strong>小學中年級（3-4 年級，約 9-10 歲）</strong>自主意識較成熟。</p>
+            <p><strong>紅包管理建議：</strong>台北富邦銀行建議 <strong>2-3 成作為零用金、7-8 成長期配置</strong>到兒童帳戶。</p>
+            <p><strong>特色做法：</strong>「存款相對計畫」——孩子每存 1 元，父母配捐 1 元，加速累積動機。</p>
+          </div>
+          <div class="allow-research-card">
+            <div class="allow-research-flag">🧠 兒童發展研究</div>
+            <p><strong>皮亞傑認知理論：</strong>7 歲前孩子以直觀思考為主，不建議過早要求「理財」。</p>
+            <p><strong>Sesame Street 研究：</strong>3 歲已能分辨「需要 vs 想要」。</p>
+            <p><strong>關鍵共識：</strong>「<strong>當孩子開始注意並詢問關於錢的問題時</strong>」就是適當時機（The Conversation, 2023）。</p>
+          </div>
+        </div>
+        <div class="allow-research-note">
+          💡 <strong>Penny 的整合建議：</strong>金額可以隨家庭負擔調整，但<strong>定時定額</strong>（例如每週固定週日發放）和<strong>不因哭鬧臨時加碼</strong>，是比金額更重要的教養原則。
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 儲蓄目標計算器 -->
+    <section class="panel" id="saving">
+      <div class="panel-eyebrow">TOOL 03</div>
+      <h2 class="panel-title">儲蓄目標計算器</h2>
+      <p class="panel-hint">
+        讓孩子看見「願望」變成「數字 × 時間」的過程。<br>
+        重點不是存多快，而是學會為自己在乎的事規劃。
+      </p>
+
+      <div class="form-grid">
+        <div class="form-field">
+          <label>想買的目標金額（元）</label>
+          <input type="number" id="goalInput" min="0" value="1200">
+        </div>
+        <div class="form-field">
+          <label>目前已存（元）</label>
+          <input type="number" id="savedInput" min="0" value="200">
+        </div>
+        <div class="form-field">
+          <label>每週預計存入（元）</label>
+          <input type="number" id="weeklyInput" min="0" value="50">
+        </div>
+      </div>
+
+      <button class="btn-primary" onclick="calcSaving()">計算達標時間 →</button>
+      <div class="result" id="savingResult" style="display:none"></div>
+    </section>
+
+    <!-- 4. 親子金錢對話資料庫 -->
+    <section class="panel" id="talk">
+      <div class="panel-eyebrow">TOOL 04</div>
+      <h2 class="panel-title">親子金錢對話資料庫</h2>
+      <p class="panel-hint">
+        30 張對話卡涵蓋從阿嬤投幣、紅包分配、到孩子開始在意品牌的多元情境。<br>
+        每張卡片包含：怎麼開口、示範對話、正向教養行動建議、要避免的回應。<br>
+        可用年齡、主題、資料來源三層篩選，也可以收藏常用卡。
+      </p>
+
+      <!-- 篩選列 -->
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label>孩子年齡</label>
+          <select id="filterAge">
+            <option value="all">不限年齡</option>
+            <option value="3-5">3 - 5 歲</option>
+            <option value="6-8">6 - 8 歲</option>
+            <option value="9-12">9 - 12 歲</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>財商主題</label>
+          <select id="filterCategory">
+            <option value="all">全部主題</option>
+            <option value="儲蓄">儲蓄</option>
+            <option value="消費">消費</option>
+            <option value="收入">收入</option>
+            <option value="捐贈">捐贈</option>
+            <option value="投資">投資</option>
+            <option value="金錢關係">金錢關係</option>
+            <option value="跨代溝通">跨代溝通</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>資料來源</label>
+          <select id="filterSource">
+            <option value="all">全部來源</option>
+            <option value="verified_case">真實案例（有紀錄）</option>
+            <option value="qa_topic">真實 QA 主題</option>
+            <option value="teaching_scenario">教學設計情境</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>顯示方式</label>
+          <div class="filter-toggle">
+            <button class="fav-toggle" id="favToggleBtn" onclick="toggleFavOnly()">只看收藏 ♡</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="talk-count" id="talkCount"></div>
+      <div class="talk-grid" id="talkGrid"></div>
+
+      <!-- 單張卡片詳細 Modal -->
+      <div class="talk-modal" id="talkModal" onclick="if(event.target.id==='talkModal') closeTalkModal()">
+        <div class="talk-modal-content" id="talkModalContent"></div>
+      </div>
+    </section>
+
+
+    <!-- 5. 12 週任務追蹤 -->
+    <section class="panel" id="tasks">
+      <div class="panel-eyebrow">TOOL 05</div>
+      <h2 class="panel-title">12 週家庭財商任務追蹤</h2>
+      <p class="panel-hint">
+        配合自學課程進度，每週有 3 個小任務。<br>
+        紀錄會存在你這台裝置的瀏覽器裡，清除瀏覽資料會不見。
+      </p>
+
+      <div class="form-field" style="margin-bottom: 20px;">
+        <label>選擇週次</label>
+        <select id="weekSelect"></select>
+      </div>
+
+      <div id="taskList"></div>
+      <div class="task-progress" id="taskProgress"></div>
+
+      <div style="display: flex; gap: 10px; margin-top: 18px;">
+        <button class="btn-secondary" onclick="clearTasks()">清除所有紀錄</button>
+      </div>
+    </section>
+
+    <!-- 6. AI 共學提示詞 -->
+    <section class="panel" id="prompts">
+      <div class="panel-eyebrow">TOOL 06</div>
+      <h2 class="panel-title">AI 共學提示詞寶典</h2>
+      <p class="panel-hint">
+        這些是 Penny 設計給家長的「專屬 ChatGPT 指令」。<br>
+        複製後貼到 ChatGPT / Claude / Gemini 任一 AI 都能用，讓 AI 當你第二位陪跑教練。
+      </p>
+
+      <div id="promptList"></div>
+    </section>
+
+  </div>
+
+  <!-- CTA 升級區 -->
+  <div class="upgrade-cta">
+    <div class="upgrade-card">
+      <div class="upgrade-eyebrow">UPGRADE</div>
+      <h3>工具有了，還想要一個真人陪你走？</h3>
+      <p>
+        自學看見起點，陪跑看見成果。<br>
+        Penny 的 12 週陪跑系統 + 3 個月延伸陪伴，<br>
+        現在開放免費 30 分鐘諮詢。
+      </p>
+      <a href="https://pennywithu.github.io/#booking" target="_blank">預約免費諮詢 →</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    © 2026 品沐文教工作室 · <a href="https://pennywithu.github.io/" target="_blank">回 Penny Coach 主站</a><br>
+    工具僅供家庭教育練習，無需輸入孩子姓名或敏感財務資料。
+  </footer>
+
+</div>
+
+<!-- ============ JavaScript ============ -->
+<script>
+/* ==================================================
+   ⚠️ 設定學員密碼（上線前改成你自己的）
+   ⚠️ 提醒：純前端密碼不是真正的安全防護
+      懂程式的人打開開發者工具就能看到
+      適合 Bonus 等級內容，不要放營業機密
+   ================================================== */
+const STUDENT_PASSWORD = 'penny';
+
+/* ===== 密碼閘門邏輯 ===== */
+function checkPassword(e) {
+  e.preventDefault();
+  const input = document.getElementById('pwInput').value.trim();
+  const error = document.getElementById('gateError');
+
+  if (input === STUDENT_PASSWORD) {
+    sessionStorage.setItem('pinmu-auth', 'true');
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('app').classList.add('active');
+    error.textContent = '';
+    initApp();
+  } else {
+    error.textContent = '密碼不正確，請確認是否從課程章節複製完整。';
+    document.getElementById('pwInput').value = '';
+  }
+}
+
+function logout() {
+  sessionStorage.removeItem('pinmu-auth');
+  document.getElementById('gate').style.display = 'flex';
+  document.getElementById('app').classList.remove('active');
+  document.getElementById('pwInput').value = '';
+}
+
+/* 已登入的話直接進入 */
+if (sessionStorage.getItem('pinmu-auth') === 'true') {
+  document.getElementById('gate').style.display = 'none';
+  document.getElementById('app').classList.add('active');
+}
+
+/* ===== 分頁切換 ===== */
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b === btn));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === target));
+    window.scrollTo({ top: document.querySelector('.tabs').offsetTop - 80, behavior: 'smooth' });
+  });
+});
+
+const money = n => Math.round(n).toLocaleString('zh-TW');
+
+/* ===== 1. 零用金規劃器 ===== */
+function calcAllowance() {
+  const a = Number(document.getElementById('amountInput').value);
+  const p = Number(document.getElementById('percentInput').value);
+  const age = document.getElementById('ageSelect').value;
+  const freq = document.getElementById('freqSelect').value;
+  const result = document.getElementById('allowResult');
+
+  if (!Number.isFinite(a) || a < 0 || p < 0 || p > 100) {
+    result.style.display = 'block';
+    result.innerHTML = '⚠️ 請輸入有效的金額與 0–100 的比例。';
+    return;
+  }
+
+  const save = a * p / 100;
+  const spend = a - save;
+
+  const ageContent = {
+    '3-5': {
+      focus: '這個階段的核心是<strong>讓孩子「看見錢」</strong>。建議金額不用高，重點在固定時間給、固定儀式感。用實體硬幣讓他分進兩個透明罐子，親眼看到「存存」一點一點長高，是這個年齡最有效的學習方式。',
+      talks: [
+        '「這是你的錢，媽媽（爸爸）給你，你可以自己決定要放到哪一個罐子。」',
+        '「你看，這個罐子有幾個銅板了？我們一起數數看。」',
+        '「如果你把這個銅板放進花花罐，等一下想買的時候就可以用；放進存存罐，就會變越來越多。你想放哪一個？」'
+      ],
+      actions: [
+        '每週固定一個時間（例如週日早餐後），全家一起進行「發零用金儀式」',
+        '準備兩個透明罐子（存存罐／花花罐），貼上孩子畫的標籤，放在他看得到的地方',
+        '每月一次陪孩子一起「數罐子」，不評論金額，只回應他的發現'
+      ]
+    },
+    '6-8': {
+      focus: '這階段孩子開始懂等待，可以引導他<strong>為一個小目標存錢</strong>。讓他自己決定存存的目的（不是你指定），家長不介入他想花花的部分，只在旁邊觀察，是正向教養裡「給自主選擇權」的核心練習。',
+      talks: [
+        '「你這週想把錢怎麼分配？告訴我你的計畫。」',
+        '「如果這週花光了，下一次零用金是 ___ 天後，你覺得還可以嗎？」',
+        '「你存錢是為了什麼？我想知道。」'
+      ],
+      actions: [
+        '陪孩子用一張紙寫下「這個月我想做到的三件事」，一件花、一件存、一件分享',
+        '當孩子花錯了，不補錢也不說教，陪他經歷一次完整的後悔週期',
+        '每月一次「家庭金錢小聊」，每個人分享自己這個月最開心和最後悔的一筆錢'
+      ]
+    },
+    '9-12': {
+      focus: '這階段可以引入<strong>「給花花」vs「給未來的自己」vs「給別人」</strong>三個分配概念。加入第三個罐子「分享罐」（10-20%），讓孩子體驗給予的喜悅，不只是累積。這也是練習「金錢不只是為了自己」的關鍵階段。',
+      talks: [
+        '「你有沒有想過，如果這筆錢存到大學，會變成多少？我們來算算看。」',
+        '「你聽過『機會成本』嗎？買這個，就代表不能買另一個。你怎麼選？」',
+        '「這個世界上有很多人需要幫助，你覺得我們家可以怎麼參與？」'
+      ],
+      actions: [
+        '帶孩子一起去開戶，讓他擁有自己的兒童帳戶（搭配台灣銀行的「存款相對計畫」可加速動機）',
+        '每月挑一天「家庭預算會議」，讓孩子參與某一項小型家庭決策（例如下個月要不要訂閱 Netflix）',
+        '陪孩子設定一個「三個月的中期目標」，中途不給提示，讓他自己調整路徑'
+      ]
+    }
+  };
+
+  const c = ageContent[age];
+  result.style.display = 'block';
+  result.innerHTML = `
+    <div class="result-section">
+      <span class="result-label">每${freq}方案</span>
+      <div>零用金總額：<strong>${money(a)} 元</strong></div>
+      <div>存存罐：<strong>${money(save)} 元</strong>（${p}%）</div>
+      <div>花花罐：<strong>${money(spend)} 元</strong>（${100-p}%）</div>
+    </div>
+    <div class="result-section">
+      <span class="result-label">${age} 歲引導重點</span>
+      <div>${c.focus}</div>
+    </div>
+    <div class="result-section">
+      <span class="result-label">💬 可以這樣跟孩子聊</span>
+      <div>${c.talks.map(t => `• ${t}`).join('<br>')}</div>
+    </div>
+    <div class="result-section">
+      <span class="result-label">🌱 這週可以做的三件事</span>
+      <div>${c.actions.map((t, i) => `${i+1}. ${t}`).join('<br>')}</div>
+    </div>
+    <div class="result-section">
+      <span class="result-label">提醒</span>
+      <div>比例只是討論起點，可依家庭預算與孩子理解程度調整。<br>避免把「基本生活照顧」（如三餐、文具）變成孩子必須自己付的項目。</div>
+    </div>
+  `;
+}
+
+/* ===== 2. 儲蓄目標計算器 ===== */
+function calcSaving() {
+  const g = Number(document.getElementById('goalInput').value);
+  const s = Number(document.getElementById('savedInput').value);
+  const w = Number(document.getElementById('weeklyInput').value);
+  const result = document.getElementById('savingResult');
+
+  if ([g, s, w].some(x => !Number.isFinite(x) || x < 0)) {
+    result.style.display = 'block';
+    result.innerHTML = '⚠️ 請輸入非負的金額。';
+    return;
+  }
+
+  result.style.display = 'block';
+
+  if (s >= g) {
+    result.innerHTML = `
+      <div class="result-section">
+        <span class="result-label">🎉 達成了</span>
+        <div>目標已達成！現在是和孩子討論「下一個目標」或「怎麼使用」的好時機。<br>
+        可以問他：「你花這筆錢的時候，心情跟你每週存錢的時候比起來，哪個比較開心？」</div>
+      </div>
+    `;
+    return;
+  }
+
+  if (w <= 0) {
+    result.innerHTML = `
+      <div class="result-section">
+        <span class="result-label">提醒</span>
+        <div>每週存入金額為 0，無法估算達標時間。<br>可以和孩子一起討論「有沒有可能每週存 10 元」，從最小承諾開始。</div>
+      </div>
+    `;
+    return;
+  }
+
+  const need = g - s;
+  const weeks = Math.ceil(need / w);
+  const months = Math.ceil(weeks / 4);
+  const progress = Math.round(s / g * 100);
+
+  result.innerHTML = `
+    <div class="result-section">
+      <span class="result-label">達標分析</span>
+      <div>還差 <strong>${money(need)} 元</strong>，目前進度 <strong>${progress}%</strong></div>
+      <div>每週固定存 ${money(w)} 元，約需 <strong>${weeks} 週</strong>（約 ${months} 個月）達標</div>
+    </div>
+    <div class="result-section">
+      <span class="result-label">陪孩子思考</span>
+      <div>• 這段時間裡，有沒有可能臨時想買別的？到時候怎麼辦？<br>
+      • 如果中間存了一半不想要了，這筆錢可以怎麼用？<br>
+      • 存完之後，你想怎麼慶祝？</div>
+    </div>
+  `;
+}
+
+/* ===== 3. 親子金錢對話資料庫 =====
+   資料來源分級（嚴格遵守）：
+   - verified_case     真實案例，有紀錄
+   - qa_topic          真實 QA 主題（有討論，缺事件細節）
+   - teaching_scenario 教學設計情境（假設）
+   所有對話皆為「教學設計示範」，非學員逐字紀錄
+   =================================================== */
+const talkCardsV2 = [
+  // ============ 真實案例 ============
+  {
+    id: 'C01',
+    source_type: 'verified_case',
+    title: '阿嬤一直投幣，孩子還想繼續坐搖搖車',
+    age_groups: ['3-5', '6-8'],
+    category: '跨代溝通',
+    parent_problem: '媽媽設定「一次」的規則，但阿嬤常常額外投幣，照顧者規則不一致。',
+    teaching_goal: '消費界線 × 跨代溝通：規則應由照顧者事先協調。',
+    opening: '「你真的很喜歡這個搖搖車，坐完還想再玩，對嗎？」',
+    dialogue: `【孩子】「我還要坐！阿嬤說可以再坐一次！」
+【媽媽】「你真的很喜歡這個搖搖車，坐完還想再玩，對嗎？」
+【孩子】「對！我還要！」
+【媽媽】「我知道你很想繼續。今天我們約好坐一次，已經坐完囉。」
+【孩子】「可是阿嬤會給我錢!」
+【媽媽】「阿嬤很疼你。不過今天坐幾次，是我們事先約好的規則。我們可以謝謝阿嬤，下次再安排來玩。」`,
+    extra: {
+      label: '給長輩的溝通示範',
+      text: '「媽，謝謝你這麼疼孩子。我們最近在練習讓他理解消費有次數限制，今天先坐一次就好。你想給他的心意，我們可以一起想其他方式。」'
+    },
+    boundary: '不在孩子面前指責長輩，也不把孩子夾在大人之間。',
+    action: '出門前先跟孩子說明「今天可以坐幾次」，讓規則不是哭鬧時才臨時決定。',
+    positive_action: '事前與長輩在孩子不在場時達成共識，讓孩子感受到「家裡的大人是同一隊」，這是建立安全感的核心（正向教養：連結先於矯正）。可以提議讓阿嬤改用「一起讀繪本 15 分鐘」等非物質方式表達愛。',
+    avoid: '不臨時推翻規則、不在孩子面前跟長輩吵、不把長輩的愛變成規則破口。',
+    course_topic: '第 5 週・消費',
+    review_status: 'pending'
+  },
+  {
+    id: 'C02',
+    source_type: 'verified_case',
+    title: '阿嬤額外給的零用錢，要存起來還是花掉？',
+    age_groups: ['6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '長輩額外給零用錢，家長想維持既有零用金制度，長輩希望存起來做未來旅遊基金，孩子想拿去花。',
+    teaching_goal: '把事情拆成三件事：錢的歸屬、長輩的心意、家庭零用金制度。',
+    opening: '「你很開心收到阿嬤給你的錢。你知道阿嬤希望你怎麼使用嗎？」',
+    dialogue: `【孩子】「阿嬤又給我錢了!我可以全部拿去買東西嗎?」
+【媽媽】「你很開心收到阿嬤給你的錢。你知道阿嬤希望你怎麼使用嗎?」
+【孩子】「不知道。」
+【媽媽】「那我們可以先問問阿嬤。如果這筆錢是送給你自由使用的，我們再一起討論要放進存存，還是花花。」
+【孩子】「我想買玩具！」
+【媽媽】「可以把想買的東西寫下來。我們先看看你有多少錢、還想存什麼目標，再由你練習做選擇。」`,
+    boundary: '尊重贈與目的與孩子的財產權益。不能未經溝通就直接把額外的錢轉作其他用途。',
+    action: '製作「固定零用金」與「額外收到的錢」兩欄記錄表，讓孩子知道來源不同、用途可能也不同。',
+    positive_action: '正向教養強調「共同解決問題」：邀請孩子一起設計這筆錢的用法，可以分「現在花」「中期存」「送長輩禮物回饋」三區。做決定的過程比分配比例更重要，這是練習自主選擇與感恩的時刻。',
+    avoid: '不要直接說「阿嬤給的錢全部拿去投資」或「全部交給父母保管」。先釐清贈與目的、金錢歸屬和孩子年齡。',
+    course_topic: '第 3 週・零用錢進階',
+    review_status: 'pending'
+  },
+
+  // ============ 真實 QA 主題 ============
+  {
+    id: 'C03',
+    source_type: 'qa_topic',
+    title: '孩子偷拿錢，怎麼教物權而不傷害關係？',
+    age_groups: ['3-5', '6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '發現孩子未經同意拿走家裡的錢去買東西，想教他物權觀念，又不想傷害親子關係。',
+    teaching_goal: '釐清事實與原因 → 建立所有權與同意的概念 → 修復責任，不貼「小偷」標籤。',
+    opening: '「我發現錢包裡少了一些錢，我想先了解發生什麼事。」',
+    dialogue: `【媽媽】「我發現錢包裡少了一些錢，我想先了解發生什麼事。」
+【孩子】「我拿去買東西了。」
+【媽媽】「謝謝你願意告訴我。你當時很想買那個東西，是嗎?」
+【孩子】「嗯。」
+【媽媽】「想買東西可以告訴我，但沒有先詢問，就拿走別人的錢，這件事需要修正。我們一起想想，要怎麼把錢還回來，還有下次可以怎麼做。」`,
+    boundary: '不威脅報警、不羞辱、不逼孩子當眾道歉、不在未了解原因前判斷孩子品格。',
+    action: '用「自己的錢／別人的錢／共同使用的錢」三種卡片，練習「使用前是否需要同意」。',
+    positive_action: '正向教養的「3R 修復法」：Recognize（承認錯誤）→ Reconcile（修復關係）→ Resolve（解決問題）。陪孩子想出一個具體的「還錢計畫」（例如用下兩週零用金分期還），讓他經歷「負責」，而不是「被處罰」。過程中強調「這件事不等於你是壞孩子」。',
+    avoid: '不貼「小偷」標籤、不當眾審問、不把一次行為放大成人格評斷。',
+    course_topic: '第 1 週・父母正確思維 × 第 6 週・收入',
+    review_status: 'pending'
+  },
+  {
+    id: 'C04',
+    source_type: 'qa_topic',
+    title: '孩子說「做家事要給我錢」',
+    age_groups: ['6-8', '9-12'],
+    category: '收入',
+    parent_problem: '孩子開始要求做任何事都要有酬勞，擔心未來連基本家事都不願做。',
+    teaching_goal: '區分「家庭共同責任」與「額外的工作機會」，避免所有行為都被金錢交換。',
+    opening: '「你想到用做事來賺錢，這個想法很有趣。」',
+    dialogue: `【孩子】「我幫你收玩具，你要給我十塊錢!」
+【媽媽】「你想到用做事來賺錢，這個想法很有趣。」
+【孩子】「那你要給我嗎?」
+【媽媽】「收好自己玩的玩具，是我們照顧生活環境的一部分，不會每次都付錢。」
+【孩子】「那我要怎麼賺錢?」
+【媽媽】「我們可以一起討論，家裡有沒有一些額外的工作，是你有能力、安全又願意挑戰的。」`,
+    boundary: '守住「基本生活自理與共同責任」不換錢的界線，但保留「額外貢獻可以有合理回報」的空間。',
+    action: '製作「家庭共同責任」和「額外工作機會」兩張表，貼在冰箱上，和孩子一起分類。',
+    positive_action: '正向教養主張「歸屬感先於報酬」：收玩具不是「打工」，是「我是這個家的一份子」的體現。可以在家庭會議中讓孩子自己提出「他想負責的區塊」（例如：每天晚餐後擦桌子是我的工作）。對於額外付費工作，可以設計「可選菜單」（如幫忙洗車 NT$50、整理資源回收 NT$30），讓他自主決定接不接案。',
+    avoid: '不要把成績、愛、尊重、基本生活自理或所有家務全部換算成金錢。',
+    course_topic: '第 6 週・收入',
+    review_status: 'pending'
+  },
+  {
+    id: 'C05',
+    source_type: 'qa_topic',
+    title: '手足之間用錢交易，父母要介入嗎？',
+    age_groups: ['6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '哥哥想收費借玩具給妹妹，妹妹不願意，開始吵架。父母不確定該不該介入。',
+    teaching_goal: '自願交易、公平、拒絕權、反悔後的協商。',
+    opening: '「我們先停一下。交易需要兩個人都願意，不是其中一個人說了算。」',
+    dialogue: `【哥哥】「你給我 20 元，我就借你玩具。」
+【妹妹】「可是我不想給!」
+【媽媽】「我們先停一下。交易需要兩個人都願意，不是其中一個人說了算。」
+【哥哥】「可是玩具是我的!」
+【媽媽】「你有權決定要不要借；妹妹也有權決定要不要付錢。我們可以再想想，除了付錢，還有沒有其他雙方都能接受的方法?」`,
+    boundary: '不強迫交易、不讓年紀大的孩子利用資訊差占便宜、保留每個人的拒絕權。',
+    action: '用「交換／借用／贈送／買賣」四種情境卡，和孩子討論不同約定的差異。',
+    positive_action: '正向教養的「中立引導」：父母不當裁判，當「協商引導者」。可以引入三個提問讓孩子自己找答案：「對方的感受是什麼？」「有沒有雙贏的方式？」「如果你是對方，你會怎麼想？」這是練習同理心與社交能力的黃金時刻。',
+    avoid: '不替其中一方做決定、不以年紀大為由要求「讓一下」、不把家庭變成純交易場所。',
+    course_topic: '第 5 週・消費 × 第 6 週・收入',
+    review_status: 'pending'
+  },
+  {
+    id: 'C06',
+    source_type: 'qa_topic',
+    title: '孩子什麼都要獎勵才願意做',
+    age_groups: ['6-8', '9-12'],
+    category: '收入',
+    parent_problem: '孩子逐漸失去內在動機，沒有獎勵就不願意動手，獎金也要越給越多。',
+    teaching_goal: '在結構化選擇中恢復自主性、能力感與家庭連結，而不是提高物質獎勵。',
+    opening: '「你很希望自己的努力能被看見，對嗎？」',
+    dialogue: `【孩子】「沒有獎勵，我就不要做。」
+【媽媽】「你很希望自己的努力能被看見，對嗎?」
+【孩子】「對啊!」
+【媽媽】「我有看到你上次自己完成的努力。這件事是我們需要一起負責的，不會每次都用錢交換。你想先做比較容易的部分，還是我們一起把它拆成兩步?」`,
+    boundary: '不用「全部不給獎勵」反方向極端化，也不把孩子一時不動簡化為懶惰。',
+    action: '提供兩個合理選項讓孩子決定順序；完成後具體描述他的努力（而不是只說「好棒」或只給物質獎勵）。',
+    positive_action: '正向教養區分「讚美」與「鼓勵」：讚美是「你好棒」（評價結果），鼓勵是「我看到你剛剛卡住，但你沒有放棄，繼續試了三次」（描述過程）。鼓勵能滋養內在動機，讚美反而會讓孩子依賴外在評價。這週練習每天給孩子一次「過程式鼓勵」，不用錢、不用禮物。',
+    avoid: '不把所有外在獎勵視為錯誤、不說「你怎麼這麼懶」、不用大人標準評斷孩子的動機。',
+    course_topic: '第 6 週・收入',
+    review_status: 'pending'
+  },
+  {
+    id: 'C07',
+    source_type: 'qa_topic',
+    title: '見面時間有限，如何穩定建立零用金制度？',
+    age_groups: ['6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '家長與孩子相處時間有限，希望在有限的日子裡維持穩定的零用金制度，不想用物質補償缺席。',
+    teaching_goal: '不讓金錢變成補償缺席或交換親密感的工具，建立可預期的安排。',
+    opening: '「你希望我們見面的時候，可以一起做很多開心的事情。」',
+    dialogue: `【孩子】「你很久才來一次，為什麼不能買給我?」
+【家長】「你希望我們見面的時候，可以一起做很多開心的事情。」
+【孩子】「我就是想買!」
+【家長】「我知道你很想要。今天我們可以一起看看你的零用金，決定要現在買、繼續存，還是把它列成下一次的目標。」
+【家長】「不管今天有沒有買東西，我都很珍惜和你相處的時間。」`,
+    boundary: '守住「零用金制度不因思念或愧疚而破壞」的界線。關愛用相處時間表達，不用物質補償。',
+    action: '建立固定、可預期的零用金規則（例如每月第一個見面日發放）；安排不需要花錢的共同活動。',
+    positive_action: '正向教養強調「品質勝於數量」：短暫相處時間裡，安排一個固定的「我們的儀式」（例如一起做煎餅早餐、睡前念同一本書），這個儀式比買任何禮物都讓孩子感受到「我是重要的」。可以錄一段音訊留給孩子，在想念時聽——這是親密感的具體化。',
+    avoid: '不用大額購物補償缺席的時間、不在情緒勒索時臨時加碼、不把愛和金錢綁在一起。',
+    course_topic: '第 1 週・父母正確思維 × 第 11 週・家庭致富習慣',
+    review_status: 'pending'
+  },
+
+  // ============ 教學設計情境（S01-S08 原有）============
+  {
+    id: 'S01',
+    source_type: 'teaching_scenario',
+    title: '逛街吵著買玩具',
+    age_groups: ['3-5', '6-8'],
+    category: '消費',
+    parent_problem: '帶孩子出門逛街，看到喜歡的東西就吵著要買。',
+    teaching_goal: '需要 vs 想要、延遲滿足。',
+    opening: '「你真的很喜歡這個玩具，我們先看看今天的購物計畫，好嗎？」',
+    dialogue: `【建議框架】
+【家長】先回應感受，不急著拒絕：「你真的很想要，對嗎？」
+【家長】連結到既有計畫：「我們今天出門是為了買__，這個不在計畫裡。」
+【家長】提供可行選項：「可以放進願望清單，用你自己的存錢去達成，或等下次生日。」`,
+    boundary: '不臨時破壞原本的購物計畫、不以哭鬧為買單理由。',
+    action: '出門前先跟孩子說「今天的購物清單」，讓期待值事先設定好。',
+    positive_action: '正向教養的「事先約定」原則：在進入賣場前，和孩子一起看一遍「今天要買什麼」清單，並約定「看到喜歡的東西可以拍照放進願望清單」。這把孩子從「被動被拒絕」變成「主動參與決策」，情緒反應會大幅降低。帶一台小相機或讓他用手機拍照是很好的工具。',
+    avoid: '不用「沒錢」「很貴」當理由（會讓孩子以為錢不夠就不能愛），改用「不在計畫內」。',
+    course_topic: '第 5 週・消費',
+    review_status: 'draft'
+  },
+  {
+    id: 'S02',
+    source_type: 'teaching_scenario',
+    title: '零用錢一拿到就花光',
+    age_groups: ['6-8', '9-12'],
+    category: '消費',
+    parent_problem: '孩子一領到零用金就全部花完，之後想買東西又開口要。',
+    teaching_goal: '消費選擇、自然結果、預算意識。',
+    opening: '「花完的感覺怎麼樣？如果可以重來，你會怎麼分配？」',
+    dialogue: `【建議框架】
+【家長】陪他回顧，不是審問：「你覺得最值得的是哪一筆？」
+【家長】保留自然結果：「這個月的額度用完了，下次是__月__日發放。」
+【家長】幫他想策略：「下次可以用什麼方法，讓錢用得比較久？」`,
+    boundary: '不提前補發、不用大人的錢救急，讓「有限」的經驗被完整感受。',
+    action: '陪孩子畫出「這個月花了什麼」的小表格，練習回顧。',
+    positive_action: '正向教養的「自然結果」是最好的老師：堅持不補錢，但用溫暖的態度陪他度過「沒錢的失落」。可以說「我知道這樣很難受，我會陪你等到下次發放。要不要我們一起想些不用花錢也能開心的事？」這是「溫柔而堅定」的核心實踐。',
+    avoid: '不說「早就跟你說過」、不羞辱他「不會管錢」、不馬上補錢。',
+    course_topic: '第 3 週・零用錢進階 × 第 5 週・消費',
+    review_status: 'draft'
+  },
+  {
+    id: 'S03',
+    source_type: 'teaching_scenario',
+    title: '孩子完全不想儲蓄',
+    age_groups: ['3-5', '6-8', '9-12'],
+    category: '儲蓄',
+    parent_problem: '孩子覺得「現在花掉比較開心」，對存錢沒興趣。',
+    teaching_goal: '目標設定、自主動機、看見儲蓄帶來的選擇權。',
+    opening: '「你有沒有一個特別想要、但花花罐一次買不起的東西？」',
+    dialogue: `【建議框架】
+【家長】先找孩子真正在乎的目標（他自己選，不是你指定）
+【家長】讓他看見「存錢換選擇」而不是「存錢是犧牲」
+【家長】用小勝利累積信心：先設一個兩週可達成的小目標`,
+    boundary: '不強迫固定存錢比例、不比較其他孩子「人家都會存」。',
+    action: '用「儲蓄目標計算器」陪孩子設第一個 2 週可達成的小目標。',
+    positive_action: '正向教養的「進步性視覺化」：製作一張「達標進度條」，每存一次就塗一格。視覺化的小勝利能啟動孩子的內在動機。達標時用「成就慶祝」而不是「物質獎勵」——可以全家擊掌、拍紀念照、寫一張小卡貼在房間，讓他體驗「我做到了」的感覺。',
+    avoid: '不用「以後會後悔」恐嚇、不替他選目標、不批評他的選擇。',
+    course_topic: '第 3 週・零用錢進階 × 第 4 週・儲蓄與複利',
+    review_status: 'draft'
+  },
+  {
+    id: 'S04',
+    source_type: 'teaching_scenario',
+    title: '孩子說：「同學都有，為什麼我沒有？」',
+    age_groups: ['6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '孩子回家抱怨同學都有某樣東西，自己沒有很失落。',
+    teaching_goal: '區分「公平 vs 相同」、建立家庭價值觀、處理比較情緒。',
+    opening: '「你發現他有、你沒有。這讓你有什麼感覺？」',
+    dialogue: `【建議框架】
+【家長】先接住感受，不急著解釋：「你覺得羨慕/難過/不公平？」
+【家長】承認比較是人性：「大人也會這樣，不是你的錯。」
+【家長】連結到家庭價值：「每個家庭的選擇不一樣，我們家重視的是__。」`,
+    boundary: '不壓抑情緒（「別比較」只會讓他更在意）、不否定他的感受。',
+    action: '睡前聊「今天家裡有什麼是別人家沒有的」，建立內在豐盛感。',
+    positive_action: '正向教養的「情緒命名」：先幫孩子找到情緒的名字（羨慕、嫉妒、被排除感），這本身就是療癒的一半。接著引導「感謝練習」——每週全家輪流說一件「這週我很感謝我們家的 ___」。研究顯示長期的感謝練習能有效降低比較焦慮。',
+    avoid: '不說「不準比較」、不說「我們沒錢」、不用家庭財務當理由。',
+    course_topic: '第 1 週・父母正確思維',
+    review_status: 'draft'
+  },
+  {
+    id: 'S05',
+    source_type: 'teaching_scenario',
+    title: '過年收到大筆紅包',
+    age_groups: ['3-5', '6-8', '9-12'],
+    category: '儲蓄',
+    parent_problem: '孩子手上突然多出一大筆錢，不知道怎麼引導他管理。',
+    teaching_goal: '金錢歸屬感、分配練習、長期規劃的初體驗。',
+    opening: '「紅包錢是你的。你想一部分花、一部分存，還是全部存？你想想看。」',
+    dialogue: `【建議框架】
+【家長】先確認金錢歸屬：這筆錢是孩子的
+【家長】提供分配架構（花／存／分享／投資）
+【家長】讓孩子親眼看到分配過程，而不是「幫你存起來」`,
+    boundary: '不「全部幫你存起來」然後就再也沒說過，不把孩子的錢當父母的。',
+    action: '跟孩子一起做「紅包分配儀式」：用四個袋子或信封，每個標上用途。',
+    positive_action: '正向教養的「儀式感」強化歸屬感：規劃一個「年度紅包會議」，全家坐下來，每人準備一杯喜歡的飲料。按台北富邦銀行的建議「2-3 成零用、7-8 成長期」做起點，但讓孩子有最終決定權。帶他親自到銀行開戶（或登入 App 看帳戶餘額），讓「存錢」變成一個具體、有畫面的經驗。',
+    avoid: '不沒收、不替他做分配、不用「你還小不懂」當藉口拿走。',
+    course_topic: '第 3 週・零用錢進階 × 第 4 週・儲蓄與複利',
+    review_status: 'draft'
+  },
+  {
+    id: 'S06',
+    source_type: 'teaching_scenario',
+    title: '想買 Minecraft、遊戲幣、虛擬寶物',
+    age_groups: ['6-8', '9-12'],
+    category: '消費',
+    parent_problem: '孩子吵著要儲值遊戲、買皮膚、買虛擬商品，家長不確定該不該讓他用自己的錢買。',
+    teaching_goal: '虛擬消費的本質、數位安全、建立數位財商觀念。',
+    opening: '「這個東西下載到你手機後，是永遠都在，還是一段時間後會消失？我們一起查查看。」',
+    dialogue: `【建議框架】
+【家長】把虛擬消費具象化：「這個遊戲更新後，這個皮膚還會在嗎？」
+【家長】連結到現實金錢：「你用 100 元買這個，能不能買一本書？你比較想要哪個？」
+【家長】設數位界線：帳號密碼不給、不綁定卡號、消費前都要討論`,
+    boundary: '守住「不綁定家長支付、每筆消費都要討論」的界線。',
+    action: '陪孩子一起研究一款他想玩的遊戲的付費機制，畫出「免費功能／付費功能」對照表。',
+    positive_action: '正向教養的「共同探索」取代「禁止」：主動和孩子一起研究他喜歡的遊戲，用好奇而不是審判的姿態。可以問「這個皮膚為什麼對你很重要？」「你朋友會因為你有這個更喜歡你嗎？」這些提問讓孩子練習反思，而不是防禦。約定「虛擬消費每月上限」並讓他自己管理，培養自律。',
+    avoid: '不直接禁止（會轉為偷偷消費）、不把虛擬消費污名化為「浪費」。',
+    course_topic: '第 5 週・消費',
+    review_status: 'draft'
+  },
+  {
+    id: 'S07',
+    source_type: 'teaching_scenario',
+    title: '孩子問「股票是什麼？」',
+    age_groups: ['6-8', '9-12'],
+    category: '投資',
+    parent_problem: '孩子聽到大人在聊股票，好奇問起來，家長不知道怎麼用他懂的方式解釋。',
+    teaching_goal: '認識投資、理解資產與風險、建立長期思維。',
+    opening: '「你看過我們常去的 __（便利商店／手搖店）嗎？你知道這家店有很多很多老闆嗎？」',
+    dialogue: `【建議框架】
+【家長】用孩子熟悉的品牌切入（便利商店、手搖店、速食店）
+【家長】說「當老闆」而不是說「炒股票」
+【家長】帶他觀察生活：「哪些品牌你每週都會買？」
+【家長】自然引入風險：「這家店如果生意不好，當老闆的人也會賠錢。」`,
+    boundary: '不渲染「賺大錢」、不教他預測漲跌、不讓他以為投資是短期致富。',
+    action: '陪他每週挑 1 個常接觸的品牌，查「是不是上市公司」，列成清單。',
+    positive_action: '正向教養的「體驗式學習」：開一個小額共同帳戶，買 1 股他喜歡的公司股票（可以是他最愛的手搖店或便利商店）。每月底一起看看股價變化，不評論漲跌，只討論「這家公司最近做了什麼」。讓他體驗「我是這家公司的小小股東」的驕傲感，連結投資與生活。',
+    avoid: '不用大人術語嚇跑他、不說「投資很危險你不要碰」、不炫耀自己的獲利或虧損。',
+    course_topic: '第 9 週・從小懂投資',
+    review_status: 'draft'
+  },
+  {
+    id: 'S08',
+    source_type: 'teaching_scenario',
+    title: '孩子不願意捐贈',
+    age_groups: ['3-5', '6-8', '9-12'],
+    category: '捐贈',
+    parent_problem: '想帶孩子體驗給予，但他不願意把自己的玩具或錢分出去。',
+    teaching_goal: '同理心、選擇的尊重、理解「給予」是能力而非義務。',
+    opening: '「我理解，這些是你的東西。你不一定要分出去，我們先聊聊就好。」',
+    dialogue: `【建議框架】
+【家長】尊重他的「不要」：捐贈不能強迫
+【家長】讓他看見「給予的對象是誰」：具體故事比道理有力
+【家長】從小額開始：10% 比 100% 容易得多
+【家長】家長示範：自己先做，讓他看見`,
+    boundary: '不以道德壓力逼迫、不說「你這樣很自私」、尊重他說「不」的權利。',
+    action: '跟孩子一起挑一個想支持的對象（動物、環境、弱勢兒童），把目標視覺化放在家裡看得到的地方。',
+    positive_action: '正向教養的「身教優於言教」：父母自己先設定一個每月固定捐款對象，讓孩子看見（但不說教）。可以帶他去一次實體的捐贈現場（流浪動物之家、育幼院活動），讓他親眼看見給予的對象，情感連結會自然發生。不要期待一次就成功，捐贈是長期的品格培養。',
+    avoid: '不強迫、不比較「別的孩子都很願意」、不用罪惡感當動力。',
+    course_topic: '第 7 週・捐贈',
+    review_status: 'draft'
+  },
+
+  // ============ 新增 S09-S23 ============
+  {
+    id: 'S09',
+    source_type: 'teaching_scenario',
+    title: '孩子說「反正錢再賺就有」',
+    age_groups: ['6-8', '9-12'],
+    category: '消費',
+    parent_problem: '孩子把錢花光後說「沒關係，再賺就有」，家長擔心他不懂金錢得來不易。',
+    teaching_goal: '理解金錢與勞動的對應關係、建立「時間 × 努力」的實感。',
+    opening: '「我好奇，你覺得我要工作多久才能賺到你剛剛花掉的這筆錢？」',
+    dialogue: `【建議框架】
+【家長】用好奇的語氣開啟（不是審問）
+【家長】帶他算一次「換算題」：「爸爸／媽媽一小時可以賺 __，這筆錢是幾小時的工作？」
+【家長】連結到他熟悉的事：「這些時間，也是我不能陪你的時間。」`,
+    boundary: '不煽動愧疚感（「我為你多辛苦」）、不用「你不懂爸媽的辛苦」否定他。',
+    action: '安排一次「跟班日」：讓孩子到你工作場所陪一兩個小時（或視訊看你工作），體驗「賺錢的時間」。',
+    positive_action: '正向教養的「具象體驗」勝過說教：找一個適合孩子年齡的小任務（例如：全家一起整理舊物到二手市集賣），讓他體驗「賺到第一筆自己的錢」的過程。研究顯示親身勞動賺的錢，孩子會花得更謹慎。這是改變「反正再賺就有」最有效的方式。',
+    avoid: '不用「你以為錢是從天上掉下來的嗎」質問、不說「我年輕時候 ___」比慘。',
+    course_topic: '第 6 週・收入 × 第 1 週・父母正確思維',
+    review_status: 'draft'
+  },
+  {
+    id: 'S10',
+    source_type: 'teaching_scenario',
+    title: '剛買的玩具很快就不玩了',
+    age_groups: ['3-5', '6-8', '9-12'],
+    category: '消費',
+    parent_problem: '孩子吵著買的東西，到手不到一週就放在角落。家長覺得浪費又不知道怎麼教。',
+    teaching_goal: '認識「擁有的喜悅會消退」、建立購買前的反思習慣。',
+    opening: '「我記得你買的時候超級開心的。現在怎麼樣了？」',
+    dialogue: `【建議框架】
+【家長】用描述而不是責備：「我發現它最近都放在角落。」
+【家長】幫他命名這個感受：「有時候我們以為會很喜歡的東西，拿到之後就沒感覺了，大人也會這樣。」
+【家長】連結到下一次：「下次很想買的時候，我們可以怎麼確認會不會又這樣？」`,
+    boundary: '不羞辱「你怎麼這樣」、不說「我就知道你不會珍惜」。',
+    action: '引入「願望清單 + 等 7 天」規則：想買的東西先寫下來，7 天後還想要再買。',
+    positive_action: '正向教養的「反思勝於懲罰」：陪孩子一起做一本「我買過的東西」小冊子，每買一個東西就畫下來，一個月後評分（1-5 顆星），不評論高低，只看他的變化。這是「後設認知」訓練，孩子會自己發現模式，比大人的碎念有用十倍。',
+    avoid: '不沒收玩具、不拿來跟其他孩子比、不說「以後都不買給你」。',
+    course_topic: '第 5 週・消費 × 第 4 週・儲蓄與複利',
+    review_status: 'draft'
+  },
+  {
+    id: 'S11',
+    source_type: 'teaching_scenario',
+    title: '孩子誤以為「爸媽的錢就是我的錢」',
+    age_groups: ['6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '孩子理所當然地覺得爸媽的錢可以隨意使用，不理解「界線」的概念。',
+    teaching_goal: '建立個人財產觀、理解家庭分工、尊重他人的勞動成果。',
+    opening: '「我想跟你聊一下『我們家的錢』怎麼運作，你有興趣聽嗎？」',
+    dialogue: `【建議框架】
+【家長】畫三個圈：「爸爸的錢／媽媽的錢／家庭共同的錢（買菜、水電）」
+【家長】解釋孩子的錢：「你的零用金，是從家庭共同的錢撥給你的，由你自己管。」
+【家長】強調尊重：「如果你想用爸爸或媽媽的錢，就跟我們一樣要先問。」`,
+    boundary: '不羞辱「你以為錢是你的喔」、不用家境困難嚇孩子。',
+    action: '畫一張「家庭金錢流向圖」，讓孩子看懂爸媽的收入、家庭支出、他的零用金是怎麼流動的。',
+    positive_action: '正向教養的「透明溝通」培養財務智商：定期召開「家庭財務小會議」（每月 15-20 分鐘），分享這個月家裡花了什麼、存了什麼（不用給精確數字，用比例或象徵）。讓孩子從「拿錢的人」變成「參與的人」，他會自然發展出財務同理心。',
+    avoid: '不藏起家庭財務當秘密、不說「反正你不用擔心錢」、也不讓孩子過度擔心家計。',
+    course_topic: '第 1 週・父母正確思維 × 第 11 週・家庭致富習慣',
+    review_status: 'draft'
+  },
+  {
+    id: 'S12',
+    source_type: 'teaching_scenario',
+    title: '孩子在同學面前炫耀物質',
+    age_groups: ['6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '孩子開始在同學面前炫耀新買的東西、家裡的車或旅行，家長擔心價值觀偏差。',
+    teaching_goal: '區分「擁有」和「自我價值」、建立內在豐盛感。',
+    opening: '「我今天聽到你跟 __ 說我們家的 ___。我想了解你當時的感覺。」',
+    dialogue: `【建議框架】
+【家長】先理解動機，不急著貼標籤：「你希望朋友覺得你怎麼樣？」
+【家長】引出核心：「如果今天沒有這些東西，你覺得朋友還會喜歡你嗎？」
+【家長】連結到品格：「真正讓人記得你的，是你怎麼對待他人。」`,
+    boundary: '不羞辱「你變得愛炫耀」、不說「這是暴發戶心態」。',
+    action: '問孩子：「你最喜歡的朋友，是因為他擁有什麼，還是他是什麼樣的人？」引導反思。',
+    positive_action: '正向教養的「身分重於擁有」：陪孩子一起寫「我是什麼樣的人」清單（不是「我有什麼」）。例如：我很會畫畫、我會照顧弟弟、我跑得很快。這份清單貼在房間，每週補一條。研究顯示，有強烈「身分認同」的孩子比較不需要用物質證明自己。',
+    avoid: '不用家境更好的人比較、不說「我們家還沒多有錢你就這樣」。',
+    course_topic: '第 1 週・父母正確思維 × 第 7 週・捐贈',
+    review_status: 'draft'
+  },
+  {
+    id: 'S13',
+    source_type: 'teaching_scenario',
+    title: '孩子過度節儉，不敢花錢',
+    age_groups: ['6-8', '9-12'],
+    category: '儲蓄',
+    parent_problem: '孩子把每一塊錢都存起來，連真正想要的東西也不敢買。家長擔心另一端的失衡。',
+    teaching_goal: '金錢是工具不是目的、健康的花錢也是能力。',
+    opening: '「我發現你最近都在存錢，很少讓自己開心一下。我想了解你的想法。」',
+    dialogue: `【建議框架】
+【家長】承認存錢是好事，但探索動機：「你存錢是為了什麼呢？」
+【家長】引入「花錢的練習」：「這週我陪你一起，用 __ 元買一個會讓你快樂的小東西。」
+【家長】連結到價值觀：「錢是幫我們實現想要的生活，不是生活的目的。」`,
+    boundary: '不逼他花錢（這會破壞信任）、不嘲笑「這麼小氣」。',
+    action: '設定「必花預算」：每月零用金至少 20% 要花掉，練習「有意識的花錢」。',
+    positive_action: '正向教養的「平衡發展」：孩子的過度節儉可能是不安全感的訊號。父母可以主動示範「健康的花錢」——例如在孩子面前說「我今天決定買一杯咖啡犒賞自己完成某件事」，讓他看見「花錢」可以是正向的自我照顧，不是浪費。這是情感教育，也是金錢教育。',
+    avoid: '不說「你這麼小氣以後交不到朋友」、不逼他請客給別人。',
+    course_topic: '第 4 週・儲蓄與複利 × 第 5 週・消費',
+    review_status: 'draft'
+  },
+  {
+    id: 'S14',
+    source_type: 'teaching_scenario',
+    title: '夫妻教養金錢觀不同調',
+    age_groups: ['3-5', '6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '另一半容易心軟買給孩子，自己想守規則，變成「寵的一方」vs「嚴的一方」。',
+    teaching_goal: '照顧者之間的共識優於單方規則、孩子需要一致性。',
+    opening: '（這張卡是給夫妻聊的，不是對孩子說的）「我們要不要找個孩子不在的時間，聊聊我們想怎麼帶他面對錢？」',
+    dialogue: `【建議框架：給父母之間】
+【A】「我注意到我們對 __ 的處理不太一樣，我想知道你是怎麼想的。」
+【B】「我覺得 ___（理解對方的立場）」
+【共同】「我們可不可以約定一個底線：__（例如：外出不臨時買玩具），其他細節可以各自彈性？」`,
+    boundary: '不在孩子面前批評另一半、不當著孩子互相否定。',
+    action: '每月夫妻一次「金錢教養會議」：30 分鐘，不討論孩子行為，只討論「我們想一起守住的三件事」。',
+    positive_action: '正向教養的「育兒夥伴」觀：孩子需要一致性，但父母不需要「相同」。可以約定「紅線」（例如：任何一方說不，就是不）和「彈性區」（各自決定）。重點是：決定後，不在孩子面前互相拆台。孩子感受到「爸媽是同一隊」比「爸媽的風格完全一樣」更重要。',
+    avoid: '不在孩子面前吵、不讓孩子「跳槽」找另一方、不說「問爸爸／媽媽就好」推卸責任。',
+    course_topic: '第 1 週・父母正確思維',
+    review_status: 'draft'
+  },
+  {
+    id: 'S15',
+    source_type: 'teaching_scenario',
+    title: '街上看到乞討者，孩子的反應',
+    age_groups: ['3-5', '6-8', '9-12'],
+    category: '捐贈',
+    parent_problem: '孩子看到街友、乞討者的反應（害怕、想幫、取笑），家長不知道怎麼引導。',
+    teaching_goal: '同理心、社會結構的初步理解、尊重每個人的尊嚴。',
+    opening: '「你剛剛看到那個叔叔／阿姨，心裡有什麼感覺？」',
+    dialogue: `【建議框架】
+【家長】先接住孩子的感受（害怕也 ok）：「你覺得怕怕的，是嗎？」
+【家長】解釋背景但不簡化：「每個人到這裡的原因都不一樣，有的是生病、有的是失業。」
+【家長】給他選擇：「我們等一下可以幫忙，也可以不幫忙，兩個都 ok。想一想你的決定。」`,
+    boundary: '不強迫捐獻、不嚇孩子「不聽話就會變這樣」、不嘲笑乞討者。',
+    action: '找一本相關繪本（例如《最棒的禮物》），睡前共讀，用故事深化理解。',
+    positive_action: '正向教養的「社會情緒學習」：這是建立「同理心」最珍貴的時刻。可以帶孩子參與一次實體的助人行動（例如：送物資到安置中心），讓他知道「捐贈不只是給錢」。回家後聊「我們家可以怎麼參與？」讓孩子提出想法，即使只是「我想捐我的舊外套」也是很棒的起點。',
+    avoid: '不說「因為他不努力」簡化成人生勝敗論、不當場教「要感恩」（這會讓孩子學會道德優越感而非同理）。',
+    course_topic: '第 7 週・捐贈',
+    review_status: 'draft'
+  },
+  {
+    id: 'S16',
+    source_type: 'teaching_scenario',
+    title: '同學要辦付費慶生會，孩子想參加',
+    age_groups: ['6-8', '9-12'],
+    category: '消費',
+    parent_problem: '同學辦需要收費的慶生會或活動，孩子很想去，家長猶豫要不要讓他用自己的錢或家庭預算。',
+    teaching_goal: '練習「社交 vs 金錢」的平衡、建立參與的優先順序。',
+    opening: '「這個活動你很想去的原因是什麼？我想了解。」',
+    dialogue: `【建議框架】
+【家長】區分「活動本身 vs 怕被排擠」：「你是因為活動好玩，還是因為大家都去？」
+【家長】引入預算概念：「這 __ 元剛好是你 __ 週的零用金。你想用自己的錢、還是跟家裡協商？」
+【家長】連結到價值：「友誼不是用參加多少活動來證明的。但這次的經驗對你很重要，我想支持你。」`,
+    boundary: '不自動付費（孩子沒參與決策就沒學習）、不隨便拒絕（會傷害社交連結）。',
+    action: '設定「社交活動年度預算」，讓孩子自己學會分配：哪些去、哪些不去。',
+    positive_action: '正向教養的「參與感與責任感」：讓孩子部分出錢（即使只有 20%），他會更珍惜這次活動。可以約定「如果用自己的錢去參加，回來後一起分享三件印象最深的事」。重點不是去不去，是這次經驗變成「他的經驗」，不是「爸媽給的經驗」。',
+    avoid: '不用「家裡沒錢」當理由、不說「同學炫富你別跟」否定社交需求。',
+    course_topic: '第 5 週・消費',
+    review_status: 'draft'
+  },
+  {
+    id: 'S17',
+    source_type: 'teaching_scenario',
+    title: '孩子說「我以後要當 YouTuber，為什麼要讀書？」',
+    age_groups: ['9-12'],
+    category: '收入',
+    parent_problem: '孩子看到網紅收入高，覺得讀書不重要，家長不知道怎麼回應。',
+    teaching_goal: '理解收入背後的能力建立、區分「成功案例」與「成功機率」。',
+    opening: '「你觀察到的沒錯，確實有 YouTuber 賺很多錢。我想跟你多聊聊你看到的。」',
+    dialogue: `【建議框架】
+【家長】不否定他的觀察：「他們的頻道你覺得厲害在哪裡？」
+【家長】拆解成功：「他的影片品質、說話能力、剪輯、對觀眾的了解，這些能力怎麼來的？」
+【家長】引入機率：「你知道全台灣有多少人想當 YouTuber，最後能靠這賺到生活費的有多少？」
+【家長】連結到學習：「不管你以後想做什麼，能力都是關鍵。讀書是其中一種累積能力的方式。」`,
+    boundary: '不嘲笑夢想、不否定 YouTuber 這個職業、不說「你根本做不到」。',
+    action: '陪他分析一個他喜歡的 YouTuber：製作時間、團隊、設備成本、頻道歷程。讓他看見「冰山下的部分」。',
+    positive_action: '正向教養的「夢想支持」：把對話從「說服他讀書」改成「陪他規劃實現夢想的路徑」。例如：「如果你真的想當 YouTuber，我們可以從現在開始，每月做一支影片，三年後看看成果。這過程中，你會發現需要學什麼。」用他的夢想當學習動機，而不是對抗他的夢想。',
+    avoid: '不說「那是運氣好的少數人」潑冷水、不說「YouTuber 沒有未來」否定行業。',
+    course_topic: '第 6 週・收入 × 第 11 週・家庭致富習慣',
+    review_status: 'draft'
+  },
+  {
+    id: 'S18',
+    source_type: 'teaching_scenario',
+    title: '孩子質疑爸媽的消費選擇',
+    age_groups: ['9-12'],
+    category: '金錢關係',
+    parent_problem: '孩子開始質疑爸媽的消費（「你怎麼可以買這個？」「這太浪費了！」），家長不知道如何回應。',
+    teaching_goal: '練習平等對話、理解每個人的消費價值觀不同、建立相互尊重。',
+    opening: '「我聽到你覺得這個不該買。我想知道你為什麼這樣想。」',
+    dialogue: `【建議框架】
+【家長】接住質疑，不防衛：「你會這樣問，我覺得很好。」
+【家長】解釋自己的考慮：「對我來說，這個東西的價值是 ___（放鬆、效率、紀念意義）。」
+【家長】引入「每個人的優先順序不同」：「就像你覺得 __ 很重要，我覺得這個對我重要。」
+【家長】給他尊重：「如果你有不同意見，我會聽，但最後我有決定自己錢怎麼用的權利，就像你有決定自己零用金的權利一樣。」`,
+    boundary: '不用「小孩子不要管大人的事」堵回去、也不過度解釋到變成辯護。',
+    action: '設定「家庭討論時間」：不是每個消費都要解釋，但願意回答他有興趣的問題。',
+    positive_action: '正向教養的「相互尊重」：孩子的質疑是好事，代表他開始思考價值觀。重點不是改變他的看法，是練習「不同想法可以共存」。可以約定「我們可以討論，但不會因此改變彼此的選擇，除非真的被說服」。這是他未來面對不同意見最珍貴的能力。',
+    avoid: '不說「我賺的錢我想怎麼用都可以」武斷、也不委屈自己「好啦我不買了」討好。',
+    course_topic: '第 1 週・父母正確思維',
+    review_status: 'draft'
+  },
+  {
+    id: 'S19',
+    source_type: 'teaching_scenario',
+    title: '孩子遇到推銷、詐騙訊息',
+    age_groups: ['6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '孩子收到遊戲裡的「免費抽獎」、社群上的「免費送你」訊息，差點被騙。',
+    teaching_goal: '辨識消費陷阱、理解「免費」的代價、建立「先停下來問」的習慣。',
+    opening: '「我想跟你聊一個重要的事：為什麼有人會送你免費的東西？」',
+    dialogue: `【建議框架】
+【家長】引入關鍵問題：「真的有人會白白送東西嗎？他們為什麼這樣做？」
+【家長】拆解商業模式：「他們可能想要你的時間、你的個資、你的朋友名單、或讓你以後付更多錢。」
+【家長】給他工具：「下次看到『免費』『限時』『只有你』這種字，先來問我。這不是不信任你，是幫你多一雙眼睛。」`,
+    boundary: '不嘲笑「這麼笨會被騙」、不過度恐嚇「網路很可怕」讓他害怕上網。',
+    action: '陪孩子一起分析 3 則「看起來很吸引人」的訊息（遊戲彈窗、社群廣告），一起找出「他們想要什麼」。',
+    positive_action: '正向教養的「培養判斷力」：不是「禁止接觸」，是「一起分析」。可以玩「破解推銷」小遊戲：每週挑一個看到的廣告，全家一起猜「他們的目的是什麼」。孩子學會「辨識」而不是「恐懼」，這是他長大後最需要的能力。',
+    avoid: '不收回他的手機當懲罰、不說「我就說不要用社群」否定他的世界。',
+    course_topic: '第 5 週・消費 × 第 1 週・父母正確思維',
+    review_status: 'draft'
+  },
+  {
+    id: 'S20',
+    source_type: 'teaching_scenario',
+    title: '孩子為了要錢而說謊',
+    age_groups: ['6-8', '9-12'],
+    category: '金錢關係',
+    parent_problem: '孩子為了得到錢編造理由（「學校要收費」「老師說要買」），發現後怎麼處理？',
+    teaching_goal: '理解說謊背後的需求、修復信任、重建透明溝通管道。',
+    opening: '「我知道你剛剛跟我說的不是真的。我不生氣，我想知道你為什麼覺得需要這樣說。」',
+    dialogue: `【建議框架】
+【家長】先穩住自己情緒，用好奇而非指責：「你真的想要那個東西，對吧？」
+【家長】理解背後的恐懼：「你是擔心直接跟我說，我會拒絕，所以才編了一個理由？」
+【家長】重建管道：「我們來約定：下次你想要什麼，直接跟我說，就算我不能答應，也不會罵你。這樣你就不用說謊。」
+【家長】保留自然結果：「這次的事，我們要一起想怎麼處理，因為信任需要修復。」`,
+    boundary: '不羞辱「你變得愛說謊了」、不翻舊帳說「你上次也 ___」、不用懲罰代替修復。',
+    action: '建立「直接問規則」：孩子直接開口，爸媽就算拒絕也不生氣，讓他知道「說真話是安全的」。',
+    positive_action: '正向教養的「說謊是訊號不是罪」：孩子說謊通常代表「他覺得說實話會有危險」。重點是修復「說實話的安全感」，不是處罰謊言。可以問「你覺得我是哪種爸媽／媽媽會讓你覺得說實話很危險？」這個問題需要你準備好聽到真實的答案，這本身就是修復。',
+    avoid: '不公開處罰（讓他有面子）、不威脅「下次再說謊就 ___」、不讓他用更多的錢「贖罪」。',
+    course_topic: '第 1 週・父母正確思維',
+    review_status: 'draft'
+  },
+  {
+    id: 'S21',
+    source_type: 'teaching_scenario',
+    title: '孩子開始在意「品牌」',
+    age_groups: ['9-12'],
+    category: '消費',
+    parent_problem: '孩子開始要名牌書包、名牌球鞋，一般品牌不要，家長糾結該不該買。',
+    teaching_goal: '理解「品牌背後的需求」、建立「價值感 vs 價格感」的對話。',
+    opening: '「我注意到你最近特別想要 __ 品牌。我想了解這對你的意義。」',
+    dialogue: `【建議框架】
+【家長】不批判，用好奇：「你喜歡這個品牌的什麼？」
+【家長】引出核心：「如果今天沒有品牌 logo，只是一樣的款式，你還會想要嗎？」
+【家長】連結到群體：「是你自己喜歡，還是同學都有這個？」
+【家長】給他選擇結構：「這個品牌 __ 元，一般款 __ 元。差額 __ 元，我可以出 50%，剩下 50% 用你自己的存錢。你要用這 __ 元換這個 logo 嗎？」`,
+    boundary: '不否定他的感受（品牌感是真實的）、也不無條件滿足。',
+    action: '設定「願望清單等待期」：想要的品牌物品先放願望清單 30 天，30 天後還想要再談。',
+    positive_action: '正向教養的「參與付出，才會珍惜」：讓孩子部分出錢（至少 30%），他會真實體驗「值不值得」。更深一層的做法：陪他研究品牌背後的工廠、勞工、環境影響，讓「消費」變成「有意識的選擇」。他可能還是會選品牌，但帶著覺察。這是比「禁止」更有力的教育。',
+    avoid: '不嘲笑「虛榮」、不說「我們家又不是沒錢給你買」被動攻擊、也不無條件買。',
+    course_topic: '第 5 週・消費 × 第 1 週・父母正確思維',
+    review_status: 'draft'
+  },
+  {
+    id: 'S22',
+    source_type: 'teaching_scenario',
+    title: '多年累積的壓歲錢，該怎麼處理？',
+    age_groups: ['9-12'],
+    category: '儲蓄',
+    parent_problem: '孩子的壓歲錢每年都存起來，累積到一定金額，該不該讓他自己運用？',
+    teaching_goal: '練習管理較大額資金、第一次做「中長期規劃」的真實體驗。',
+    opening: '「你知道你現在有 __ 元了嗎？這是一筆不小的數目。我想跟你一起規劃。」',
+    dialogue: `【建議框架】
+【家長】透明揭露：帶孩子看帳戶，知道自己有多少
+【家長】拆分四個方向：「現在可以享受 / 中期目標 / 長期投資 / 分享給他人」
+【家長】讓他主導：「你想怎麼分配？不急，可以想一週。」
+【家長】學習決策：「這個決定可能影響你兩三年，我們一起討論但你最後決定。」`,
+    boundary: '不代替決定（即使你覺得某個選擇更好）、不臨時收回「這筆錢家裡要用」。',
+    action: '陪孩子開一個「投資觀察戶」，用壓歲錢的 10-20% 買一檔 ETF 或小額零股，每月看一次變化。',
+    positive_action: '正向教養的「信任交付」：這是孩子第一次管理「大」錢的機會，過程比結果重要。即使他決定「全部花掉」，也比爸媽代為決定更有教育意義——他會體驗到完整的「擁有、選擇、後果」。可以約定「今年這樣用，一年後我們回顧」。真正的學習來自真實的經驗。',
+    avoid: '不用「這麼多錢你不會用」為理由收回、不替他決定、不比較「別的孩子怎麼存」。',
+    course_topic: '第 4 週・儲蓄與複利 × 第 9 週・從小懂投資 × 第 10 週・資產配置',
+    review_status: 'draft'
+  },
+  {
+    id: 'S23',
+    source_type: 'teaching_scenario',
+    title: '孩子想擺攤、開賣場、做小生意',
+    age_groups: ['6-8', '9-12'],
+    category: '收入',
+    parent_problem: '孩子想做小生意（擺攤、賣手作、賣遊戲代幣），家長不知道怎麼支持又不干預。',
+    teaching_goal: '從零開始體驗「創業」的全流程、理解收入背後的成本與努力。',
+    opening: '「哇你想做生意！跟我說說你的點子。」',
+    dialogue: `【建議框架】
+【家長】保持熱情，不潑冷水：「我覺得這個想法很有趣！」
+【家長】引導思考成本：「做這個需要什麼材料？大約多少錢？你想怎麼投資起始資金？」
+【家長】引導思考客群：「誰會買？為什麼他會向你買，而不是向別人買？」
+【家長】約定試營運：「我們先試一次（一天／一個下午），看看反應，再決定要不要做下去。」`,
+    boundary: '不嘲笑「你以為這麼好賺？」、也不過度介入幫他做（會變成你的生意）。',
+    action: '陪孩子做「迷你創業計畫書」：三頁，分別寫產品、客群、定價。真的去試一次。',
+    positive_action: '正向教養的「做中學」：不管結果賺賠，過程中孩子學到的「主動解決問題、面對陌生人、承擔風險、設計定價」都是書本給不了的。重點不是結果成功，是「我做過一次」的自信。失敗了陪他分析「哪一步可以改善」，成功了讓他體驗「賺到第一筆自己的錢」的驕傲。這些經驗，是未來任何職涯選擇的底氣。',
+    avoid: '不替他招呼客人、不嫌棄他的產品、也不說「沒人會買這個」提前判死。',
+    course_topic: '第 6 週・收入 × 第 11 週・家庭致富習慣',
+    review_status: 'draft'
+  }
+];
+
+const sourceBadgeMap = {
+  verified_case: { label: '真實案例', cls: 'badge-verified' },
+  qa_topic: { label: '真實 QA 主題', cls: 'badge-qa' },
+  teaching_scenario: { label: '教學設計情境', cls: 'badge-scenario' }
+};
+
+const ageBadgeMap = {
+  '3-5': '3-5 歲',
+  '6-8': '6-8 歲',
+  '9-12': '9-12 歲'
+};
+
+/* 收藏 */
+function getFavs() {
+  try { return new Set(JSON.parse(localStorage.getItem('pinmu-talk-favs') || '[]')); } catch { return new Set(); }
+}
+function saveFavs(s) {
+  try { localStorage.setItem('pinmu-talk-favs', JSON.stringify([...s])); } catch {}
+}
+let favOnly = false;
+function toggleFavOnly() {
+  favOnly = !favOnly;
+  document.getElementById('favToggleBtn').classList.toggle('active', favOnly);
+  document.getElementById('favToggleBtn').textContent = favOnly ? '顯示全部 ♡' : '只看收藏 ♡';
+  renderTalkCards();
+}
+function toggleFav(id, e) {
+  e.stopPropagation();
+  const favs = getFavs();
+  favs.has(id) ? favs.delete(id) : favs.add(id);
+  saveFavs(favs);
+  renderTalkCards();
+}
+
+function renderTalkCards() {
+  const age = document.getElementById('filterAge').value;
+  const cat = document.getElementById('filterCategory').value;
+  const src = document.getElementById('filterSource').value;
+  const favs = getFavs();
+
+  const filtered = talkCardsV2.filter(c => {
+    if (age !== 'all' && !c.age_groups.includes(age)) return false;
+    if (cat !== 'all' && c.category !== cat) return false;
+    if (src !== 'all' && c.source_type !== src) return false;
+    if (favOnly && !favs.has(c.id)) return false;
+    return true;
+  });
+
+  const grid = document.getElementById('talkGrid');
+  const count = document.getElementById('talkCount');
+  count.textContent = `共 ${filtered.length} 張對話卡　｜　資料庫共 ${talkCardsV2.length} 張　｜　♡ 收藏 ${favs.size} 張`;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div class="talk-empty">沒有符合條件的對話卡，試試調整篩選。</div>';
+    return;
+  }
+
+  grid.innerHTML = filtered.map(c => {
+    const sb = sourceBadgeMap[c.source_type];
+    const ageBadges = c.age_groups.map(a => `<span class="talk-badge badge-age">${ageBadgeMap[a]}</span>`).join('');
+    const faved = favs.has(c.id);
+    const draftMark = c.review_status === 'draft' ? '<span class="badge-review-pending">草稿</span>' : '';
+    return `
+      <div class="talk-card" onclick="openTalkModal('${c.id}')">
+        <div class="talk-card-badges">
+          <span class="talk-badge ${sb.cls}">${sb.label}${draftMark}</span>
+          <span class="talk-badge badge-category">${c.category}</span>
+          ${ageBadges}
+        </div>
+        <div class="talk-card-id">${c.id}</div>
+        <div class="talk-card-title">${c.title}</div>
+        <div class="talk-card-problem">${c.parent_problem}</div>
+        <div class="talk-card-footer">
+          <span>查看完整對話 →</span>
+          <button class="talk-fav-btn ${faved ? 'faved' : ''}" onclick="toggleFav('${c.id}', event)" title="收藏">${faved ? '♥' : '♡'}</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function openTalkModal(id) {
+  const c = talkCardsV2.find(x => x.id === id);
+  if (!c) return;
+  const sb = sourceBadgeMap[c.source_type];
+  const ageBadges = c.age_groups.map(a => `<span class="talk-badge badge-age">${ageBadgeMap[a]}</span>`).join('');
+  const draftMark = c.review_status === 'draft' ? '<span class="badge-review-pending">草稿</span>' : '';
+
+  // 給對話加上 speaker 顏色強調
+  const styledDialogue = c.dialogue.replace(/【([^】]+)】/g, '<span class="talk-dialogue-speaker">【$1】</span>');
+
+  document.getElementById('talkModalContent').innerHTML = `
+    <button class="talk-modal-close" onclick="closeTalkModal()">✕</button>
+
+    <div style="margin-bottom:20px;">
+      <div class="talk-card-badges">
+        <span class="talk-badge ${sb.cls}">${sb.label}${draftMark}</span>
+        <span class="talk-badge badge-category">${c.category}</span>
+        ${ageBadges}
+      </div>
+      <div class="talk-card-id" style="margin-top:12px">${c.id}</div>
+      <h2 style="font-family:var(--font-serif);font-size:24px;font-weight:700;color:var(--text-dark);margin-top:6px;line-height:1.4">
+        ${c.title}
+      </h2>
+    </div>
+
+    <div class="talk-detail-section">
+      <span class="talk-detail-label">家長遇到的問題</span>
+      <p>${c.parent_problem}</p>
+    </div>
+
+    <div class="talk-detail-section">
+      <span class="talk-detail-label">教學目標</span>
+      <p>${c.teaching_goal}</p>
+    </div>
+
+    <div class="talk-detail-section">
+      <span class="talk-detail-label">💬 家長可以這樣開口</span>
+      <p style="font-size:16px;font-weight:500;color:var(--accent-amber-dark)">${c.opening}</p>
+    </div>
+
+    <div class="talk-detail-section">
+      <span class="talk-detail-label">🌱 示範對話</span>
+      <div class="talk-dialogue">${styledDialogue}</div>
+    </div>
+
+    ${c.extra ? `
+    <div class="talk-detail-section">
+      <span class="talk-detail-label">${c.extra.label}</span>
+      <p>${c.extra.text}</p>
+    </div>` : ''}
+
+    <div class="talk-detail-section">
+      <span class="talk-detail-label">🚧 要守住的界線</span>
+      <p>${c.boundary}</p>
+    </div>
+
+    <div class="talk-detail-section">
+      <span class="talk-detail-label">⏱ 今天的 10 分鐘練習</span>
+      <p>${c.action}</p>
+    </div>
+
+    ${c.positive_action ? `
+    <div class="talk-detail-section talk-positive-action">
+      <span class="talk-detail-label talk-detail-label-positive">💛 正向教養行動建議</span>
+      <p>${c.positive_action}</p>
+    </div>` : ''}
+
+    <div class="talk-detail-section">
+      <span class="talk-detail-label">⛔ 要避免的回應</span>
+      <p>${c.avoid}</p>
+    </div>
+
+    <div class="talk-detail-section">
+      <span class="talk-detail-label">📚 對應課程章節</span>
+      <p>${c.course_topic}</p>
+    </div>
+
+    <div class="talk-modal-actions">
+      <button class="btn-primary" onclick="copyDialogue('${c.id}', this)">複製整段對話</button>
+      <button class="btn-secondary" onclick="toggleFavInModal('${c.id}', this)">
+        ${getFavs().has(c.id) ? '♥ 已收藏（取消）' : '♡ 加入收藏'}
+      </button>
+    </div>
+
+  `;
+  document.getElementById('talkModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeTalkModal() {
+  document.getElementById('talkModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function copyDialogue(id, btn) {
+  const c = talkCardsV2.find(x => x.id === id);
+  if (!c) return;
+  const text = `【${c.title}】\n\n${c.dialogue}\n\n— ${c.course_topic}`;
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = '✓ 已複製';
+    setTimeout(() => btn.textContent = orig, 2000);
+  });
+}
+
+function toggleFavInModal(id, btn) {
+  const favs = getFavs();
+  favs.has(id) ? favs.delete(id) : favs.add(id);
+  saveFavs(favs);
+  btn.textContent = favs.has(id) ? '♥ 已收藏（取消）' : '♡ 加入收藏';
+  renderTalkCards();
+}
+
+// 綁定篩選
+['filterAge', 'filterCategory', 'filterSource'].forEach(id => {
+  document.getElementById(id).addEventListener('change', renderTalkCards);
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeTalkModal();
+});
+
+/* 以下舊變數保留，避免其他地方誤用時整體崩掉 */
+const talkCards = {
+  'toy-3-5': {
+    opener: '「你好喜歡這個喔？告訴媽媽，它哪裡最吸引你？」',
+    why: '這個年紀還沒有「等待」的能力，與其拒絕，不如先幫他「說出想要的感覺」。被看見的感受，比得到玩具更重要。',
+    avoid: '不要說「我們很窮」「你怎麼都亂花錢」——這會讓孩子把錢和羞愧連在一起。'
+  },
+  'toy-6-8': {
+    opener: '「我看到你很想要。你覺得你的花花罐夠不夠？要不要我們算一下？」',
+    why: '這個年紀開始能理解「有限的資源」。把決定權還給孩子（不是你說不行），他會慢慢學會自己衡量。',
+    avoid: '不要替他決定「值不值得」。他現在覺得值得，才是真的學會為自己的選擇負責。'
+  },
+  'toy-9-12': {
+    opener: '「你覺得這個東西三個月後，你還會想要它嗎？要不要先放進願望清單？」',
+    why: '引入「時間」的維度，讓孩子體驗「衝動」和「真的想要」的差別。這是延遲滿足的核心訓練。',
+    avoid: '不要用「你自己賺的錢你花光我不管」威脅——這會讓他下次不敢跟你討論錢。'
+  },
+  'spent-3-5': {
+    opener: '「花光了喔？你想想看，你最喜歡買的是哪一個？」',
+    why: '這個年紀還不會後悔，與其講道理，不如陪他回顧「哪個最快樂」。這是在建立「花錢要有感覺」的基礎。',
+    avoid: '不要馬上補發零用金。「後果」要能被經驗，孩子才會記得。'
+  },
+  'spent-6-8': {
+    opener: '「花完的感覺怎麼樣？如果可以重來，你會怎麼分配？」',
+    why: '引導「反思」，不是「檢討」。語氣要像好奇，不是審問。這一刻的對話，決定孩子長大後敢不敢跟你談財務。',
+    avoid: '不要說「早就跟你說過」——這會讓他關閉和你討論錢的大門。'
+  },
+  'spent-9-12': {
+    opener: '「這個月提前花完了。你覺得是這個月特別有想要的，還是整個分配方式需要調整？」',
+    why: '把他當「夥伴」而不是「學生」。這階段的孩子最在意被尊重，用成人的語氣跟他討論，他會用成人的態度回應。',
+    avoid: '不要用「我就知道你不會管錢」否定他的能力。'
+  },
+  'save-3-5': {
+    opener: '「你好像比較喜歡現在就花掉？媽媽也常常這樣！不如我們來玩個小遊戲⋯⋯」',
+    why: '這個年紀沒有「未來」的概念，硬要他存反而製造對立。用遊戲（例如「每存 5 元媽媽拍手一次」）讓儲蓄變成好玩的事。',
+    avoid: '不要強迫固定比例要存。這個年紀「體驗存錢好玩」比「學會存錢」重要 10 倍。'
+  },
+  'save-6-8': {
+    opener: '「你有沒有一個特別想要、但花花罐一次買不起的東西？」',
+    why: '儲蓄沒有誘因就撐不下去。先找出孩子真正在乎的目標，存錢才有意義。',
+    avoid: '不要替他選目標。他自己想要的，才會真的願意等。'
+  },
+  'save-9-12': {
+    opener: '「你知道大人為什麼要存錢嗎？不是為了存錢本身，是為了『有選擇的自由』。」',
+    why: '這階段可以談抽象概念。讓他理解「存錢 = 未來選擇權」，而不是「現在的犧牲」。',
+    avoid: '不要用「不然以後會吃苦」嚇他。恐懼不是長久的動機。'
+  },
+  'compare-3-5': {
+    opener: '「你覺得姊姊/弟弟拿到不一樣多嗎？告訴媽媽你看到了什麼。」',
+    why: '這個年紀的「比較」其實是在確認「我被公平對待嗎」。先讓他說出感受，再解釋背後的原因。',
+    avoid: '不要說「不準比較」——比較是人性，禁止只會讓他更在意。'
+  },
+  'compare-6-8': {
+    opener: '「你發現他有，你沒有。這讓你有什麼感覺？」',
+    why: '這個年紀要練習「分辨感受」。是羨慕？難過？生氣？先命名感受，才能處理感受。',
+    avoid: '不要馬上解釋「因為你比較小/大」。先讓感受被接住，再講道理。'
+  },
+  'compare-9-12': {
+    opener: '「你覺得公平，是『一樣多』，還是『適合每個人』？我們來聊聊。」',
+    why: '這階段可以引導思考「公平 vs 相同」的差別。這是建立成熟價值觀的關鍵對話。',
+    avoid: '不要用「你應該懂事」壓他。他不是不懂事，他是在練習處理這個複雜的情緒。'
+  },
+  'lost-3-5': {
+    opener: '「錢不見了，你一定很難過。媽媽抱抱。」',
+    why: '這個年紀，情緒被處理比錢找不找得回來更重要。先接住他的失落，再談後面。',
+    avoid: '不要說「下次要小心」——這句話會讓孩子記得「犯錯 = 被責備」，而不是學到教訓。'
+  },
+  'lost-6-8': {
+    opener: '「我們來想想，下次怎麼可以更安全地保管？」',
+    why: '聚焦在「解決方法」而不是「追究錯誤」。孩子需要感覺自己有能力變好，不是感覺自己很糟。',
+    avoid: '不要馬上補錢。讓他經歷「真的沒有了」的失落，是最珍貴的財商課。'
+  },
+  'lost-9-12': {
+    opener: '「如果你是銀行經理，你會怎麼教客戶保護錢？我們來一起想想。」',
+    why: '這個年紀開始能抽象思考。用「角色反轉」的方式，讓他從教別人中學到知識。',
+    avoid: '不要用「人家騙你是你蠢」這種話。被騙的羞恥感，比損失更會傷害孩子的自信。'
+  },
+  'gift-3-5': {
+    opener: '「哇！好多紅包！我們來幫它們找個家好嗎？」',
+    why: '這個年紀還沒辦法管大筆錢。重點是建立「這筆錢是我的，但要有地方放」的意識。',
+    avoid: '不要全部沒收。即使說「幫你存起來」，也要讓他親眼看到存進去的那一刻。'
+  },
+  'gift-6-8': {
+    opener: '「紅包錢是你的。你想一部分花、一部分存，還是全部存？你想想看。」',
+    why: '把決定權交給孩子。這是他第一次管「大筆錢」的機會，過程比結果重要。',
+    avoid: '不要用「我幫你存起來」然後再也沒說過。這會讓孩子覺得錢是被拿走的，不是自己的。'
+  },
+  'gift-9-12': {
+    opener: '「這筆錢是你的年度大收入。你想怎麼分配：花、存、投資、分享？」',
+    why: '這個年紀可以引入「分帳戶」的概念。讓他經歷「做預算」的流程，是最實用的財商訓練。',
+    avoid: '不要替他做分配。你替他做一次，他就少一次練習的機會。'
+  }
+};
+
+const moodAddon = {
+  calm: '',
+  frustrated: '\n\n**給媽媽的話**：你現在有點煩躁，正常的。可以先做三次深呼吸再開口，孩子會感受到你的穩定。',
+  angry: '\n\n**給媽媽的話**：先走開 5 分鐘。這一刻的對話不會比媽媽的穩定重要。孩子寧願等 5 分鐘後穩定的媽媽，也不要現在憤怒的教訓。',
+  sad: '\n\n**給媽媽的話**：教養本來就累。今天沒做到也沒關係，先照顧自己，明天再來。你已經在學習了，這就夠了。'
+};
+
+function generateTalkCard() {
+  const age = document.getElementById('talkAge').value;
+  const scen = document.getElementById('talkScenario').value;
+  const mood = document.getElementById('talkMood').value;
+  const result = document.getElementById('talkResult');
+
+  const key = `${scen}-${age}`;
+  const card = talkCards[key];
+
+  if (!card) {
+    result.style.display = 'block';
+    result.innerHTML = '⚠️ 這個組合還沒建好，請換一個試試。';
+    return;
+  }
+
+  result.style.display = 'block';
+  result.innerHTML = `
+    <div class="result-section">
+      <span class="result-label">💬 可以這樣開口</span>
+      <div>${card.opener}</div>
+    </div>
+    <div class="result-section">
+      <span class="result-label">🌱 為什麼這樣說有效</span>
+      <div>${card.why}</div>
+    </div>
+    <div class="result-section">
+      <span class="result-label">⛔ 要避免的回應</span>
+      <div>${card.avoid}</div>
+    </div>
+    ${moodAddon[mood] ? `<div class="result-section" style="padding-top:14px;border-top:1px dashed var(--line-soft);"><div>${moodAddon[mood].trim().replace(/\n\n/g, '<br>')}</div></div>` : ''}
+  `;
+}
+
+/* ===== 4. 家庭財商健檢 ===== */
+// ⚠️ 待替換：10 題可由 Penny 的理論框架優化
+const quizData = [
+  { q: '家裡會不會在孩子面前公開討論錢？', opts: [
+    { t: '幾乎不會，覺得孩子不用懂', s: { avoid: 2 } },
+    { t: '偶爾會，但盡量簡短帶過', s: { avoid: 1, mid: 1 } },
+    { t: '常常會，是日常話題', s: { open: 2 } }
+  ]},
+  { q: '你自己對「錢」的感覺比較接近？', opts: [
+    { t: '焦慮，覺得永遠不夠', s: { avoid: 2 } },
+    { t: '還算平穩，但不太懂理財', s: { mid: 2 } },
+    { t: '穩定，有在學習和規劃', s: { open: 2 } }
+  ]},
+  { q: '孩子吵著要買東西時，你通常⋯', opts: [
+    { t: '看情況妥協，避免吵架', s: { avoid: 1, mid: 1 } },
+    { t: '會先講道理，但很花力氣', s: { mid: 2 } },
+    { t: '會引導他用自己的錢決定', s: { open: 2 } }
+  ]},
+  { q: '孩子有固定零用金嗎？', opts: [
+    { t: '沒有，需要時才給', s: { avoid: 2 } },
+    { t: '有，但沒固定', s: { mid: 1, open: 1 } },
+    { t: '有，固定時間固定金額', s: { open: 2 } }
+  ]},
+  { q: '你會讓孩子看到你怎麼花錢嗎？', opts: [
+    { t: '很少，覺得那是大人的事', s: { avoid: 2 } },
+    { t: '偶爾，但不會解釋', s: { mid: 2 } },
+    { t: '會，而且會說明為什麼這樣選', s: { open: 2 } }
+  ]},
+  { q: '家裡有存錢的「看得見的方式」嗎？（存錢筒、帳戶對帳單）', opts: [
+    { t: '沒有，大人的錢都在銀行', s: { avoid: 1, mid: 1 } },
+    { t: '有，但孩子不常看到', s: { mid: 2 } },
+    { t: '有，孩子會看到並有自己的', s: { open: 2 } }
+  ]},
+  { q: '當孩子亂花錢後悔了，你會？', opts: [
+    { t: '責備他並補錢給他', s: { avoid: 2 } },
+    { t: '念幾句但還是會補', s: { avoid: 1, mid: 1 } },
+    { t: '陪他經歷後悔，不補錢', s: { open: 2 } }
+  ]},
+  { q: '你覺得「教孩子理財」這件事⋯', opts: [
+    { t: '很想但不知道怎麼開始', s: { avoid: 1, mid: 1 } },
+    { t: '有在嘗試但常常撐不下去', s: { mid: 2 } },
+    { t: '已經是家庭日常的一部分', s: { open: 2 } }
+  ]},
+  { q: '你和另一半對錢的觀念接近嗎？', opts: [
+    { t: '差很多，常因此爭執', s: { avoid: 2 } },
+    { t: '有些差，但可以討論', s: { mid: 2 } },
+    { t: '接近，而且會共同規劃', s: { open: 2 } }
+  ]},
+  { q: '你希望孩子長大後，跟錢的關係是⋯', opts: [
+    { t: '不要太在乎錢就好', s: { mid: 1 } },
+    { t: '會賺錢、不被錢困住', s: { open: 1, mid: 1 } },
+    { t: '有選擇的自由、不被錢綁架', s: { open: 2 } }
+  ]}
+];
+
+function renderQuiz() {
+  const container = document.getElementById('quizQuestions');
+  container.innerHTML = quizData.map((q, i) => `
+    <div class="quiz-question">
+      <div class="quiz-question-num">Q${i + 1} / 10</div>
+      <div class="quiz-question-text">${q.q}</div>
+      <div class="quiz-options">
+        ${q.opts.map((opt, j) => `
+          <label class="quiz-option" data-q="${i}">
+            <input type="radio" name="q${i}" value="${j}" onchange="markOption(${i})">
+            <span>${opt.t}</span>
+          </label>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function markOption(qi) {
+  document.querySelectorAll(`.quiz-option[data-q="${qi}"]`).forEach(label => {
+    const radio = label.querySelector('input');
+    label.classList.toggle('selected', radio.checked);
+  });
+}
+
+function calcQuiz() {
+  const score = { avoid: 0, mid: 0, open: 0 };
+  let answered = 0;
+
+  quizData.forEach((q, i) => {
+    const sel = document.querySelector(`input[name="q${i}"]:checked`);
+    if (sel) {
+      answered++;
+      const s = q.opts[Number(sel.value)].s;
+      Object.keys(s).forEach(k => score[k] += s[k]);
+    }
+  });
+
+  const result = document.getElementById('quizResult');
+
+  if (answered < 10) {
+    result.style.display = 'block';
+    result.innerHTML = `⚠️ 還有 ${10 - answered} 題沒作答。請先完成全部題目。`;
+    return;
+  }
+
+  // 找最高分
+  let type = 'open';
+  if (score.avoid >= score.mid && score.avoid >= score.open) type = 'avoid';
+  else if (score.mid >= score.open) type = 'mid';
+
+  // ⚠️ 待替換：Penny 可調整三種家庭類型的描述
+  const typeDesc = {
+    avoid: {
+      name: '金錢迴避型家庭',
+      desc: '你的家目前對「錢」比較避談，這很常見，不是壞事，只是還沒習慣。<br>你可能自己對錢也有一些焦慮或不確定，所以不知道怎麼開口教孩子。',
+      next: '**下一步建議**：<br>1. 從「讓錢被看見」開始——擺一個透明存錢筒在客廳<br>2. 不用教道理，就是在孩子面前自然地討論「這個月水電費多少」<br>3. 建議從 12 週課程的第 1-3 週開始，重點在「打破家庭金錢禁忌」'
+    },
+    mid: {
+      name: '嘗試建構中家庭',
+      desc: '你已經在嘗試教孩子財商了，但常覺得撐不下去或效果不穩定。<br>這階段最常見的卡點是「沒有系統」——想到什麼教什麼，孩子也很難內化。',
+      next: '**下一步建議**：<br>1. 把工具箱裡的「零用金規劃器」用一次，和孩子一起決定規則<br>2. 建立「每週 10 分鐘家庭金錢小聊」固定時段<br>3. 建議完整走完 12 週課程，重點在建立「可持續的系統」'
+    },
+    open: {
+      name: '金錢開放型家庭',
+      desc: '恭喜你，你的家已經有不錯的財商基礎。<br>孩子在你家不會覺得錢是禁忌，你自己對錢也有相對成熟的態度。',
+      next: '**下一步建議**：<br>1. 開始深化，進入「價值觀」層次（分享、投資、長期目標）<br>2. 讓孩子有機會「做一次真的決策」（例如自己規劃一次家庭採買）<br>3. 課程的第 8-12 週會特別適合你，重點在「從習慣到價值觀」'
+    }
+  };
+
+  const t = typeDesc[type];
+  result.style.display = 'block';
+  result.innerHTML = `
+    <div class="result-section">
+      <span class="result-label">你的家庭類型</span>
+      <div style="font-family: var(--font-serif); font-size: 22px; font-weight: 700; color: var(--accent-amber-dark); margin: 8px 0;">${t.name}</div>
+      <div>${t.desc}</div>
+    </div>
+    <div class="result-section">
+      <span class="result-label">下一步怎麼走</span>
+      <div>${t.next.replace(/\n/g, '<br>')}</div>
+    </div>
+    <div class="result-section" style="padding-top:14px;border-top:1px dashed var(--line-soft);">
+      <div style="font-size:13px;color:var(--text-soft);">提醒：這是傾向判斷，不是人格標籤。你隨時可以重新測試。</div>
+    </div>
+  `;
+}
+
+/* ===== 5. 12 週任務追蹤 ===== */
+// Penny 實際 12 週課綱（每週任務數不同，2-3 個都可以）
+const weekThemes = [
+  {
+    t: '父母正確思維',
+    tasks: [
+      '聊錢說愛的習觀建立：觀察家中物品物價、外出學看標價（物價、購物、水電、瓦斯）',
+      '跟孩子聊聊：為什麼要賺錢、為什麼要讀書',
+      '討論孩子可以做的事，家務開始分擔'
+    ]
+  },
+  {
+    t: '認識錢・零用金起步',
+    tasks: [
+      '玩錢幣遊戲',
+      '帶孩子購物請孩子結帳（現金、信用卡、支付）',
+      '交易演進解說，解說完給孩子影片'
+    ]
+  },
+  {
+    t: '零用錢進階與儲蓄起步',
+    tasks: [
+      '協助孩子設定零用錢目標：找出圖片、金額、訂下完成時間',
+      '螞蟻及蟋蟀的故事：爸媽講一次、討論問題、看影片',
+      '大人檢視：自己的記帳流程和專款專戶'
+    ]
+  },
+  {
+    t: '儲蓄與複利',
+    tasks: [
+      '想出日常生活中三種可以讓孩子練習延遲滿足的方法',
+      '設定家庭儲蓄目標（可以是旅遊門票、可以是共同吃一個甜點）',
+      '龜兔賽跑：故事討論和影片欣賞'
+    ]
+  },
+  {
+    t: '消費',
+    tasks: [
+      '外出用餐引導孩子看菜單聊價格，結帳時與孩子一起看帳單核對項目',
+      '跟孩子一起看廣告討論真實性，對於家中是需要還是想要',
+      '「想要還是需要」遊戲：A. 機智問答 ／ B. 逛賣場討論'
+    ]
+  },
+  {
+    t: '收入',
+    tasks: [
+      '用零用金表格討論家務和好習慣',
+      '孩子完成指定家務後，練習具體讚美',
+      '跟孩子正向討論過去父母的打工經驗、喜怒哀樂，記得正面給予自己的解決方案'
+    ]
+  },
+  {
+    t: '捐贈：感恩力量無限',
+    tasks: [
+      '與孩子討論一個弱勢族群或你所在意的社會狀況，一同做功課可以為這問題做些什麼',
+      '與孩子聊聊什麼是再多金錢也無法擁有的',
+      '與孩子一同瞭解非洲蚊帳大使凱薩琳的故事《孩子救孩子》'
+    ]
+  },
+  {
+    t: '財商生活體驗式教學',
+    tasks: [
+      '運用 5W1H 法跟孩子進行觀察與提問',
+      '創意教養的練習：問孩子學校學到什麼，一起在生活中應用'
+    ]
+  },
+  {
+    t: '從小懂投資',
+    tasks: [
+      '講故事：《生金蛋的鵝》、《提水桶和接水管》',
+      '與孩子聊聊什麼是資產與負債',
+      '與孩子一起觀察：身邊的消費或用品是上市公司嗎？提供什麼服務？每週可以認識 2-3 個'
+    ]
+  },
+  {
+    t: '資產配置',
+    tasks: [
+      '與孩子聊通貨膨脹會帶來的影響，我們可以怎麼做',
+      '與孩子聊風險、保險和資產配置，運用故事討論'
+    ]
+  },
+  {
+    t: '家庭致富習慣',
+    tasks: [
+      '設定存錢目標 + 計畫',
+      '對於自己想學習的領域開始學習（投資、運動、興趣）',
+      '開自己和孩子的證券戶'
+    ]
+  },
+  {
+    // ⚠️ 待替換：你截圖裡只看到 11 個主題，我幫你補了第 12 週「回顧與整合」
+    //    你若另有想法，告訴我這週要放什麼
+    t: '回顧與整合（待你確認）',
+    tasks: [
+      '做一次完整的 12 週家庭回顧對話',
+      '為孩子寫一段「我看見你改變」的紀錄',
+      '預約下一階段的學習方向或行動'
+    ]
+  }
+];
+
+const ALL_TASKS = weekThemes.map((w, wi) => w.tasks.map((_, ti) => `${wi}-${ti}`)).flat();
+
+function initTasks() {
+  const sel = document.getElementById('weekSelect');
+  sel.innerHTML = weekThemes.map((w, i) => `<option value="${i}">第 ${i + 1} 週｜${w.t}</option>`).join('');
+  sel.onchange = renderTasks;
+  renderTasks();
+}
+
+function getTaskState() {
+  try { return JSON.parse(localStorage.getItem('pinmu-tasks-v2') || '{}'); } catch { return {}; }
+}
+function saveTaskState(s) {
+  try { localStorage.setItem('pinmu-tasks-v2', JSON.stringify(s)); } catch {}
+}
+
+function renderTasks() {
+  const wi = Number(document.getElementById('weekSelect').value);
+  const state = getTaskState();
+  const done = state[wi] || [];
+  const list = document.getElementById('taskList');
+
+  list.innerHTML = weekThemes[wi].tasks.map((task, ti) => `
+    <label class="task-item ${done.includes(ti) ? 'done' : ''}">
+      <input type="checkbox" ${done.includes(ti) ? 'checked' : ''} onchange="toggleTask(${wi}, ${ti})">
+      <span>${task}</span>
+    </label>
+  `).join('');
+
+  const weekTotal = weekThemes[wi].tasks.length;
+  const total = ALL_TASKS.length;
+  const totalDone = Object.values(state).reduce((sum, arr) => sum + arr.length, 0);
+  const weekMsg = done.length === weekTotal
+    ? '本週完成了！可以帶著觀察進入下一週。'
+    : done.length === 0
+    ? '慢慢來，先完成一件最小的事就夠了。'
+    : `本週還剩 ${weekTotal - done.length} 個任務。`;
+
+  document.getElementById('taskProgress').innerHTML = `
+    <strong>本週進度：${done.length}/${weekTotal}</strong>　｜　整體進度：${totalDone}/${total}<br>
+    ${weekMsg}
+  `;
+}
+
+function toggleTask(wi, ti) {
+  const state = getTaskState();
+  const arr = new Set(state[wi] || []);
+  arr.has(ti) ? arr.delete(ti) : arr.add(ti);
+  state[wi] = [...arr];
+  saveTaskState(state);
+  renderTasks();
+}
+
+function clearTasks() {
+  if (confirm('確定清除所有週次的任務勾選紀錄嗎？這個動作無法復原。')) {
+    try { localStorage.removeItem('pinmu-tasks-v2'); } catch {}
+    renderTasks();
+  }
+}
+
+/* ===== 6. AI 共學提示詞 ===== */
+// ⚠️ 待替換：Penny 可補充/修改這些提示詞
+const prompts = [
+  {
+    title: '家庭金錢對話腳本生成',
+    use: '卡在不知道怎麼開口時，用這個產生專屬話術',
+    text: `你是親子財商對話教練，請用溫和、不說教、避免恐嚇的語氣，幫我設計一段對話。
+
+情境：[請描述今天發生什麼事]
+孩子年齡：[幾歲]
+孩子個性：[害羞/外向/敏感/固執]
+我希望最後讓孩子理解：[想傳達的價值觀]
+
+請給我：
+1. 開場的第一句話（不要說教）
+2. 當孩子說「不要」或「為什麼」時的三種回應
+3. 要避免的三種常見錯誤
+4. 結束對話的方式`
+  },
+  {
+    title: '幫孩子的願望做財務規劃',
+    use: '孩子想買某個東西時，變成一次教學',
+    text: `我的孩子 [幾歲] 想要 [物品名稱]，大約 [價格]。
+他目前每 [週/月] 有 [金額] 零用金。
+
+請幫我設計一份「給孩子看的規劃對話」，包含：
+1. 怎麼讓他自己算出需要多久
+2. 過程中可能出現的放棄點，媽媽可以怎麼接住
+3. 如果他半途想換目標，怎麼回應
+4. 達成時的儀式感建議
+
+用溫暖、像朋友聊天的語氣，不要有數學教學感。`
+  },
+  {
+    title: '面對手足比較的對話',
+    use: '哥哥姐姐弟弟妹妹為錢爭執時',
+    text: `我有 [幾個] 孩子，年齡分別是 [年齡們]。
+今天發生：[描述情況]
+我擔心的是：[你的擔心]
+
+請用「不壓抑比較情緒、但引導公平 vs 相同」的視角，給我：
+1. 分開跟每個孩子說什麼
+2. 一起跟他們說什麼
+3. 這件事可以借題發揮的價值觀教學點`
+  },
+  {
+    title: '幫我檢視我的金錢語言',
+    use: '覺得自己常說錯話，但不知道哪裡錯',
+    text: `我最近常對孩子說這些話：
+[把你常說的 3-5 句話列出來，例如「這個太貴了」「我們沒錢」「你怎麼都亂花」]
+
+請幫我：
+1. 分析每一句話傳達給孩子的「潛在訊息」
+2. 給我更健康的替代說法
+3. 指出我可能自己都沒意識到的金錢焦慮來源`
+  },
+  {
+    title: '為孩子設計一週財商小任務',
+    use: '想讓這週有結構，不是碎片教學',
+    text: `我的孩子 [幾歲]，這週我有大約 [時間] 可以陪他做財商練習。
+他目前對錢的理解程度：[初級/中級/進階]
+我們家最近的金錢現況：[例如準備過年、剛買大東西、計畫旅行]
+
+請幫我設計 7 天的小任務，每天 10 分鐘以內，要求：
+- 融入生活，不要像功課
+- 不需要額外採買材料
+- 每天都有「讓孩子說話」的時刻
+- 週末有一個「爸爸/其他家人也能參與」的活動`
+  },
+  {
+    title: '幫我讀懂孩子的「金錢行為訊號」',
+    use: '孩子行為異常，不知道背後是什麼',
+    text: `我發現我的孩子 [幾歲] 最近出現這個行為：[描述行為]。
+
+例如：突然很愛藏錢、拒絕花錢、開始跟同學比較、對某個東西異常執著⋯⋯
+
+請以兒童發展與家庭動力的角度，幫我分析：
+1. 這個行為背後可能的 3 種心理原因
+2. 每一種原因對應的觀察方法
+3. 如果是其中某一種，我可以怎麼回應
+4. 什麼時候該找專業協助`
+  },
+  {
+    title: '幫我寫一則財商小故事',
+    use: '想用故事取代說教，教孩子一個財商概念',
+    text: `我想用一個小故事，跟孩子聊 [想傳達的概念，例如：延遲滿足／複利／分享／機會成本／需要 vs 想要]。
+
+孩子資訊：
+・年齡：[幾歲]
+・最近很愛的主題：[恐龍／公主／太空／某個卡通角色／動物⋯⋯]
+・使用場合：[睡前 3-5 分鐘／車上／散步時／吃飯聊天]
+
+請幫我設計一個適合這個孩子的小故事，要求：
+1. 主角和場景是孩子熟悉的世界，不要硬塞教條
+2. 中間有一個「主角要做選擇」的關鍵點，可以暫停問孩子「你覺得他該怎麼辦？」
+3. 結局不要寫「他從此很乖」這種說教式結論，而是讓孩子看見選擇的自然結果
+4. 故事結束後，給我三個可以問孩子的開放式問題
+5. 整個故事 500 字以內，可以直接念出來
+
+如果是比較小的孩子（3-5 歲），用重複句型（像「小熊走啊走、走啊走」）會更好記。`
+  },
+  {
+    title: '幫我設計一個財商實體工具',
+    use: '把抽象概念變成家裡看得到、摸得到的東西',
+    text: `我想做一個實體工具，讓孩子在家裡具體「看見」財商概念。
+
+我想做的工具類型：[例如：零用金記帳表／願望清單／家務機會表／「需要 vs 想要」分類卡／儲蓄進度追蹤／紅包分配信封⋯⋯]
+孩子年齡：[幾歲]
+使用場景：[放冰箱／帶出門／睡前討論用／貼在孩子房間]
+我希望孩子從中學到：[例如：看見自己的消費模式／為目標練習規劃／區分責任和機會]
+
+請幫我設計：
+1. 這個工具的結構（幾欄幾列、每欄放什麼、要不要畫插圖）
+2. 怎麼取得（手繪、列印、用貼紙、用磁鐵、用小罐子）
+3. 第一次跟孩子介紹時，可以說的 3 句話（不要有說教感）
+4. 每週/每月使用的固定時機建議（讓它變成習慣，不是功課）
+5. 用了一個月後孩子會膩，可以怎麼變化玩法
+
+如果家裡預算有限，請以「家裡現成材料能做」為優先。`
+  }
+];
+
+function renderPrompts() {
+  document.getElementById('promptList').innerHTML = prompts.map((p, i) => `
+    <div class="prompt-card">
+      <div class="prompt-card-title">${p.title}</div>
+      <div class="prompt-card-use">用在：${p.use}</div>
+      <div class="prompt-box" id="prompt-${i}">${p.text}</div>
+      <button class="prompt-copy-btn" onclick="copyPrompt(${i}, this)">複製整段 Prompt</button>
+    </div>
+  `).join('');
+}
+
+function copyPrompt(i, btn) {
+  const text = prompts[i].text;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '✓ 已複製，貼到 ChatGPT 使用';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = '複製整段 Prompt';
+      btn.classList.remove('copied');
+    }, 2500);
+  }).catch(() => {
+    btn.textContent = '複製失敗，請手動選取';
+  });
+}
+
+/* ===== 初始化 ===== */
+function initApp() {
+  renderTalkCards();
+  renderQuiz();
+  initTasks();
+  renderPrompts();
+}
+
+// 如果一開始就已登入，直接初始化
+if (sessionStorage.getItem('pinmu-auth') === 'true') {
+  initApp();
+}
+</script>
+
+</body>
+</html>
